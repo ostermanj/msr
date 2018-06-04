@@ -2,13 +2,64 @@ const dataSource = require('../data/msr-data.json');
 import { dataController } from '../dev-js/highchart-app.js';
 //import { sharedMethods } from '../dev-js/shared-methods.js';
 
+function createCharts(data){
+    var ChartConfig = function(parentConfig, y){
+        console.log(this, parentConfig, y);
+        this.childData = y;
+        this.series = [createChildSeries.call(this,y)];
+        for ( var key in parentConfig ) { // take the the ownProperties of the parent config and make them
+                                          // the own properties of the child. Highcharts config obj won't work
+                                          // with prototypically inherited properties  
+            if ( parentConfig.hasOwnProperty(key) ){
+                this[key] = parentConfig[key];
+            }
+        }
+        this.title.text = y.key;
+    }
+    ChartConfig.prototype = this;
+
+    function createChildSeries(d){ 
+        var valuesObj = d.values.find(m => m.key === this.initialCategory).values[0];
+        return {
+            type: this.chart.type,
+            data: this.xAxis.categories.map(c => valuesObj[c])
+        };
+    }
+
+    console.log(this.index);
+    var parentContainer = document.getElementById('chart-' + this.index);
+    this.children = [];
+    data.forEach((y, i) => {
+        var container = document.createElement('div');
+        container.className = 'chart-container chart-container--small';
+        container.id = 'chart-' + this.index + '-multiple-' + i;
+        parentContainer.appendChild(container);
+        var childConfig = new ChartConfig(this, y);
+        this.children.push( new Highcharts.chart('chart-' + this.index + '-multiple-' + i, childConfig) );
+    });
+
+}
+
+function createSeries(data){
+    console.log(this, data);
+    createCharts.call(this, data);
+
+}
+
 export default { 
     chart: {  
-        //height: 500,
+        height: 275,
         type: 'column'  
+    },
+    credits: {
+        enabled: false
+    },
+    legend: {
+        enabled: false
     },
     plotOptions: {
         column: {
+            colorByPoint: true
         //    stacking: 'normal'
         }   
     },  
@@ -23,13 +74,13 @@ export default {
         valueSuffix: ' million tons'
     },
     xAxis: {
-        categories: ['Standard Scenario', 'High Gas Prices', 'High Demand', 'High Demand<br />and Gas Prices'], // TO DO: set programatically
+        categories: ['tnac', 'allowances', 'emissions', 'msr', 'cancelled'], 
         labels: {
             y: 40 
         }
     },
     yAxis: {
-        max:5000, // TO DO: set programmatically
+        max:2200, // TO DO: set programmatically
         reversedStacks: false,
         endOnTick:false,
         stackLabels: {
@@ -43,7 +94,7 @@ export default {
             y: 20
         },
         title: {
-            text: 'terawatt hours',
+            text: 'million tons',
             align:'high',
             reserveSpace: false,    
             rotation: 0,
@@ -54,15 +105,11 @@ export default {
         } 
     },
     /* extends highcharts */
-    dataSource: dataController.nestData(dataSource, ['category','aeo','scenario']),
-    initialCategory: 'baseline',
-    initialUpdateParams: ['baseline'],
+    dataSource: dataController.nestData(dataSource, ['year','mitigation']),
+    initialCategory: 'normal',
     isMultiple: true,
-    seriesCreator: sharedMethods.createBarSeries,
-    updateFunction: sharedMethods.updateChart,
-    userOptions: sharedMethods.userOptions,
-    note: 'Annual Energy Outlook estimates from 2011 (old) and 2016 (new). ' + 
-          'Estimates from 2016 do not have the “high demand and gas prices” scenario. ' + 
-          'Estimates from 2011 for the “high gas prices” and “high demand” scenarios are not available for the the $50/ton tax option. ' + 
-          'Carbon-tax levels change over time—dollar amounts correspond to 2018 levels. Source: U.S. Energy Information Administration.',
+    seriesCreator: createSeries,
+    updateFunction: null,
+    userOptions: null,
+    note: null
 };

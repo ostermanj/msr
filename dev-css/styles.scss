@@ -1,3 +1,13 @@
+.multiple-chart-container {
+  display: flex;
+  flex-wrap: wrap;
+  .chart-container {
+    width: 190px;
+  }
+}
+
+
+
 .radio fieldset {
   transition: border-color 0.1s ease-out;
   border: 1px solid #bfccd7;
@@ -206,6 +216,9 @@ g.highcharts-annotation[visibility="hidden"]{
 
 .highcharts-stack-labels, .highcharts-axis-labels, .highcharts-legend-item text {
     font-size: 0.85em;
+    .multiple-chart-container & {
+      font-size: 0.65em;
+    }
   
 }
 
