@@ -1,0 +1,380 @@
+[
+  {
+    "mitigation": "normal",
+    "year": 2017,
+    "tnac": 1700,
+    "allowances": null,
+    "emissions": 1794,
+    "msr": null,
+    "cancelled": null
+  },
+  {
+    "mitigation": "normal",
+    "year": 2018,
+    "tnac": 1733,
+    "allowances": 1787,
+    "emissions": 1754,
+    "msr": null,
+    "cancelled": null
+  },
+  {
+    "mitigation": "normal",
+    "year": 2019,
+    "tnac": 1389,
+    "allowances": 1756,
+    "emissions": 1684,
+    "msr": 666,
+    "cancelled": 0
+  },
+  {
+    "mitigation": "normal",
+    "year": 2020,
+    "tnac": 1241,
+    "allowances": 1824,
+    "emissions": 1639,
+    "msr": 2299,
+    "cancelled": 0
+  },
+  {
+    "mitigation": "normal",
+    "year": 2021,
+    "tnac": 1026,
+    "allowances": 1739,
+    "emissions": 1656,
+    "msr": 2597,
+    "cancelled": 0
+  },
+  {
+    "mitigation": "normal",
+    "year": 2022,
+    "tnac": 1086,
+    "allowances": 1933,
+    "emissions": 1627,
+    "msr": 2843,
+    "cancelled": 0
+  },
+  {
+    "mitigation": "normal",
+    "year": 2023,
+    "tnac": 956,
+    "allowances": 1695,
+    "emissions": 1565,
+    "msr": 960,
+    "cancelled": 2144
+  },
+  {
+    "mitigation": "normal",
+    "year": 2024,
+    "tnac": 991,
+    "allowances": 1740,
+    "emissions": 1590,
+    "msr": 772,
+    "cancelled": 303
+  },
+  {
+    "mitigation": "normal",
+    "year": 2025,
+    "tnac": 984,
+    "allowances": 1613,
+    "emissions": 1501,
+    "msr": 891,
+    "cancelled": 0
+  },
+  {
+    "mitigation": "normal",
+    "year": 2026,
+    "tnac": 912,
+    "allowances": 1547,
+    "emissions": 1501,
+    "msr": 861,
+    "cancelled": 147
+  },
+  {
+    "mitigation": "normal",
+    "year": 2027,
+    "tnac": 858,
+    "allowances": 1520,
+    "emissions": 1464,
+    "msr": 826,
+    "cancelled": 145
+  },
+  {
+    "mitigation": "normal",
+    "year": 2028,
+    "tnac": 834,
+    "allowances": 1493,
+    "emissions": 1414,
+    "msr": 801,
+    "cancelled": 128
+  },
+  {
+    "mitigation": "normal",
+    "year": 2029,
+    "tnac": 830,
+    "allowances": 1466,
+    "emissions": 1370,
+    "msr": 776,
+    "cancelled": 124
+  },
+  {
+    "mitigation": "normal",
+    "year": 2030,
+    "tnac": 992,
+    "allowances": 1431,
+    "emissions": 1269,
+    "msr": 652,
+    "cancelled": 125
+  },
+  {
+    "mitigation": "fast",
+    "year": 2017,
+    "tnac": 1700,
+    "allowances": null,
+    "emissions": 1809,
+    "msr": null,
+    "cancelled": null
+  },
+  {
+    "mitigation": "fast",
+    "year": 2018,
+    "tnac": 1737,
+    "allowances": 1787,
+    "emissions": 1750,
+    "msr": null,
+    "cancelled": null
+  },
+  {
+    "mitigation": "fast",
+    "year": 2019,
+    "tnac": 1393,
+    "allowances": 1756,
+    "emissions": 1683,
+    "msr": 667,
+    "cancelled": 0
+  },
+  {
+    "mitigation": "fast",
+    "year": 2020,
+    "tnac": 1241,
+    "allowances": 1824,
+    "emissions": 1642,
+    "msr": 2301,
+    "cancelled": 0
+  },
+  {
+    "mitigation": "fast",
+    "year": 2021,
+    "tnac": 1100,
+    "allowances": 1739,
+    "emissions": 1582,
+    "msr": 2599,
+    "cancelled": 0
+  },
+  {
+    "mitigation": "fast",
+    "year": 2022,
+    "tnac": 1247,
+    "allowances": 1933,
+    "emissions": 1522,
+    "msr": 2863,
+    "cancelled": 0
+  },
+  {
+    "mitigation": "fast",
+    "year": 2023,
+    "tnac": 1181,
+    "allowances": 1695,
+    "emissions": 1462,
+    "msr": 981,
+    "cancelled": 2182
+  },
+  {
+    "mitigation": "fast",
+    "year": 2024,
+    "tnac": 1377,
+    "allowances": 1740,
+    "emissions": 1402,
+    "msr": 760,
+    "cancelled": 362
+  },
+  {
+    "mitigation": "fast",
+    "year": 2025,
+    "tnac": 1483,
+    "allowances": 1613,
+    "emissions": 1342,
+    "msr": 914,
+    "cancelled": 12
+  },
+  {
+    "mitigation": "fast",
+    "year": 2026,
+    "tnac": 1570,
+    "allowances": 1547,
+    "emissions": 1282,
+    "msr": 875,
+    "cancelled": 216
+  },
+  {
+    "mitigation": "fast",
+    "year": 2027,
+    "tnac": 1679,
+    "allowances": 1520,
+    "emissions": 1222,
+    "msr": 845,
+    "cancelled": 218
+  },
+  {
+    "mitigation": "fast",
+    "year": 2028,
+    "tnac": 1809,
+    "allowances": 1493,
+    "emissions": 1162,
+    "msr": 820,
+    "cancelled": 226
+  },
+  {
+    "mitigation": "fast",
+    "year": 2029,
+    "tnac": 1956,
+    "allowances": 1466,
+    "emissions": 1102,
+    "msr": 795,
+    "cancelled": 242
+  },
+  {
+    "mitigation": "fast",
+    "year": 2030,
+    "tnac": 2110,
+    "allowances": 1431,
+    "emissions": 1042,
+    "msr": 769,
+    "cancelled": 260
+  },
+  {
+    "mitigation": "slow",
+    "year": 2017,
+    "tnac": 1700,
+    "allowances": null,
+    "emissions": 1776,
+    "msr": null,
+    "cancelled": null
+  },
+  {
+    "mitigation": "slow",
+    "year": 2018,
+    "tnac": 1737,
+    "allowances": 1787,
+    "emissions": 1750,
+    "msr": null,
+    "cancelled": null
+  },
+  {
+    "mitigation": "slow",
+    "year": 2019,
+    "tnac": 1393,
+    "allowances": 1756,
+    "emissions": 1683,
+    "msr": 667,
+    "cancelled": 0
+  },
+  {
+    "mitigation": "slow",
+    "year": 2020,
+    "tnac": 1241,
+    "allowances": 1824,
+    "emissions": 1642,
+    "msr": 2301,
+    "cancelled": 0
+  },
+  {
+    "mitigation": "slow",
+    "year": 2021,
+    "tnac": 1060,
+    "allowances": 1739,
+    "emissions": 1622,
+    "msr": 2599,
+    "cancelled": 0
+  },
+  {
+    "mitigation": "slow",
+    "year": 2022,
+    "tnac": 1137,
+    "allowances": 1933,
+    "emissions": 1602,
+    "msr": 2853,
+    "cancelled": 0
+  },
+  {
+    "mitigation": "slow",
+    "year": 2023,
+    "tnac": 977,
+    "allowances": 1695,
+    "emissions": 1582,
+    "msr": 964,
+    "cancelled": 2162
+  },
+  {
+    "mitigation": "slow",
+    "year": 2024,
+    "tnac": 1038,
+    "allowances": 1740,
+    "emissions": 1562,
+    "msr": 762,
+    "cancelled": 319
+  },
+  {
+    "mitigation": "slow",
+    "year": 2025,
+    "tnac": 984,
+    "allowances": 1613,
+    "emissions": 1542,
+    "msr": 887,
+    "cancelled": 0
+  },
+  {
+    "mitigation": "slow",
+    "year": 2026,
+    "tnac": 891,
+    "allowances": 1547,
+    "emissions": 1522,
+    "msr": 856,
+    "cancelled": 149
+  },
+  {
+    "mitigation": "slow",
+    "year": 2027,
+    "tnac": 802,
+    "allowances": 1520,
+    "emissions": 1502,
+    "msr": 823,
+    "cancelled": 139
+  },
+  {
+    "mitigation": "slow",
+    "year": 2028,
+    "tnac": 813,
+    "allowances": 1493,
+    "emissions": 1482,
+    "msr": 700,
+    "cancelled": 123
+  },
+  {
+    "mitigation": "slow",
+    "year": 2029,
+    "tnac": 817,
+    "allowances": 1466,
+    "emissions": 1462,
+    "msr": 700,
+    "cancelled": 0
+  },
+  {
+    "mitigation": "slow",
+    "year": 2030,
+    "tnac": 806,
+    "allowances": 1431,
+    "emissions": 1442,
+    "msr": 700,
+    "cancelled": 0
+  }
+]
