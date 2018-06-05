@@ -2,10 +2,34 @@
   display: flex;
   flex-wrap: wrap;
   .chart-container {
-    width: 190px;
+    width: 155px;
+    padding-bottom: 0;
+    margin-bottom:0;
+  }
+  .highcharts-container {
+    .highcharts-yaxis-labels, .highcharts-yaxis .highcharts-axis-title, .highcharts-xaxis-labels   {
+      display:none;
+    }
+    &.first-in-row {
+      .highcharts-yaxis-labels, .highcharts-yaxis .highcharts-axis-title   {
+        display:inline;
+      }
+    }
+    &.last-in-column {
+      overflow: visible;
+      .highcharts-xaxis-labels {
+        display:inline;
+      }
+      svg {
+        overflow: visible;
+      }
+    }
   }
 }
 
+#chart-0 {
+  margin-bottom: 40px;
+}
 
 
 .radio fieldset {
@@ -211,6 +235,9 @@ g.highcharts-annotation[visibility="hidden"]{
 
 .highcharts-yaxis .highcharts-axis-title {
     font-style: italic;
+    .multiple-chart-container & {
+      font-size: 0.65em;
+    }
 
 }
 
@@ -218,6 +245,7 @@ g.highcharts-annotation[visibility="hidden"]{
     font-size: 0.85em;
     .multiple-chart-container & {
       font-size: 0.65em;
+      line-height: 0;
     }
   
 }
