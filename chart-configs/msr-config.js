@@ -7,7 +7,7 @@ function createCharts(data){
         console.log(this, parentConfig, y);
         this.indexInSet= i;
         this.childData = y;
-        this.series = [createChildSeries.call(this,y)];
+        this.series = createChildSeries.call(this,y);
         for ( var key in parentConfig ) { // take the the ownProperties of the parent config and make them
                                           // the own properties of the child. Highcharts config obj won't work
                                           // with prototypically inherited properties  
@@ -21,10 +21,18 @@ function createCharts(data){
 
     function createChildSeries(d){ 
         var valuesObj = d.values.find(m => m.key === this.initialCategory).values[0];
-        return {
+        var suppliedSeries = this.xAxis.categories.map((c, i) => {
+            return {
+                data: [
+                    [i, valuesObj[c]]
+                ]
+            };
+        });
+        return suppliedSeries;
+  /*      return {
             type: this.chart.type,
             data: this.xAxis.categories.map(c => valuesObj[c])
-        };
+        };*/
     }
 
     console.log(this.index);
@@ -130,8 +138,8 @@ export default {
     },
     plotOptions: {
         column: {
-            colorByPoint: true
-        //    stacking: 'normal'
+         //   colorByPoint: true
+            stacking: 'normal'
         }   
     },  
     subtitle: {
