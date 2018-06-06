@@ -25,9 +25,19 @@ function createCharts(data){
             return {
                 data: [
                     [i, valuesObj[c]]
-                ]
+                ],
+                name: c
             };
         });
+        if ( valuesObj.emissions && valuesObj.allowances ) {
+            let calculatedSeries = {
+                data: [
+                    [this.xAxis.categories.indexOf('emissions'), valuesObj.allowances - valuesObj.emissions]
+                ],
+                name: 'Surplus allowances'
+            }
+            suppliedSeries.push(calculatedSeries);
+        }
         return suppliedSeries;
   /*      return {
             type: this.chart.type,
@@ -139,7 +149,8 @@ export default {
     plotOptions: {
         column: {
          //   colorByPoint: true
-            stacking: 'normal'
+            stacking: 'normal',
+            //grouping: false
         }   
     },  
     subtitle: {
@@ -166,7 +177,7 @@ export default {
         tickLength: 0
     },
     yAxis: {
-        max:2200, // TO DO: set programmatically
+        max:2850, // TO DO: set programmatically
         reversedStacks: false,
         endOnTick:false,
         //offset: -15,
