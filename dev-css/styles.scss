@@ -1,3 +1,35 @@
+.highcharts-grid-line {
+    fill: none;
+    stroke: #000;
+    opacity: 0.2;
+}
+.highcharts-plot-band {
+  fill: #fff;
+  fill-opacity: 1
+}
+
+g.highcharts-plot-lines-0 {
+    transform: translate(0,-1px);
+    path {
+      stroke: #000;
+    }
+}
+.highcharts-plot-line-label {
+  display: none;
+  transform: translate(-1.2em,0.45em);
+    .first-in-column &.stock-flow {
+      display: inline;
+    }
+    .last-in-row &.cap{
+      display: inline;
+      fill: #000;
+    }
+}
+
+.highcharts-point {
+  stroke-width: 0;
+}
+
 .multiple-chart-container {
   display: flex;
   flex-wrap: wrap;
@@ -155,7 +187,7 @@ g.title-high text {
   text-anchor: start;
 }
 
-g.shortdot path {
+g.shortdot path, path.shortdot {
   stroke-dasharray: 5;
 }
 
@@ -241,7 +273,7 @@ g.highcharts-annotation[visibility="hidden"]{
 
 }
 
-.highcharts-stack-labels, .highcharts-axis-labels, .highcharts-legend-item text {
+.highcharts-stack-labels, .highcharts-axis-labels, .highcharts-legend-item text, .highcharts-plot-line-label  {
     font-size: 0.85em;
     .multiple-chart-container & {
       font-size: 0.65em;
@@ -250,7 +282,7 @@ g.highcharts-annotation[visibility="hidden"]{
   
 }
 
-.highcharts-axis-title, .highcharts-axis-labels, .highcharts-subtitle, .highcharts-legend-item text {
+.highcharts-axis-title, .highcharts-axis-labels, .highcharts-subtitle, .highcharts-legend-item text, .highcharts-plot-line-label {
       fill: #58585b;
       font-weight: normal;
 }

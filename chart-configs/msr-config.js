@@ -16,8 +16,20 @@ function createCharts(data){
             }
         }
         this.title.text = y.key;
+        this.yAxis.plotLines = [
+            {
+                value: this.childData.values.find(m => m.key === this.initialCategory).values[0].allowances,
+                label: {
+                    className: 'cap',
+                    text: 'cap',
+                    y:-10,
+                    x:13,
+                    align: 'center'
+                }
+            }
+        ];
     }
-    ChartConfig.prototype = this;
+    ChartConfig.prototype = this;   
 
     function createChildSeries(d){ 
         var valuesObj = d.values.find(m => m.key === this.initialCategory).values[0];
@@ -168,16 +180,53 @@ export default {
         valueSuffix: ' million tons'
     },
     xAxis: {
-        categories: ['tnac', 'allowances', 'emissions', 'msr', 'cancelled'], 
+        categories: [ 'msr', 'tnac', 'emissions', 'intake', 'cancelled'], 
+
         labels: {
             y: 7,
             padding: -5,
             reserveSpace: false 
         },
-        tickLength: 0
+        tickLength: 0,
+        plotBands: [
+            {
+                from: -0.5,
+                to: 1.5,
+                zIndex:1
+            },{
+                from: 2.5,
+                to: 4.5,
+                zIndex:1
+            }
+        ],
+        plotLines: [{
+            value: 1.5,
+            label: {
+                text: 'stock',
+                className: 'stock-flow',
+                x:8,
+                y:3,
+                align: 'right'
+            },
+            className: 'shortdot',
+            zIndex:3
+        },
+        {
+            value: 1.5,
+            label: {
+                text: 'flow',
+                className: 'stock-flow',
+                x:18,
+                y:3,
+                align: 'left'
+            },
+            className: 'shortdot flow',
+            zIndex:3
+        }]
     },
     yAxis: {
-        max:2850, // TO DO: set programmatically
+        max:2950, // TO DO: set programmatically
+        gridZIndex:2,
         reversedStacks: false,
         endOnTick:false,
         //offset: -15,
