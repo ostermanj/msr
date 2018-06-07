@@ -8,6 +8,10 @@
   fill-opacity: 1
 }
 
+.surplus-allowances rect {
+  fill: #f15c80;
+}
+
 g.highcharts-plot-lines-0 {
     transform: translate(0,-1px);
     path {
@@ -17,7 +21,7 @@ g.highcharts-plot-lines-0 {
 .highcharts-plot-line-label {
   display: none;
   transform: translate(-1.2em,0.45em);
-    .first-in-column &.stock-flow {
+    .last-in-column &.stock-flow {
       display: inline;
     }
     .last-in-row &.cap{
@@ -34,9 +38,10 @@ g.highcharts-plot-lines-0 {
   display: flex;
   flex-wrap: wrap;
   .chart-container {
-    width: 155px;
+    width: 130px;
     padding-bottom: 0;
     margin-bottom:0;
+    margin-right: -40px;
   }
   .highcharts-container {
     .highcharts-yaxis-labels, .highcharts-yaxis .highcharts-axis-title, .highcharts-xaxis-labels   {

@@ -41,15 +41,24 @@ function createCharts(data){
                 name: c
             };
         });
-        if ( valuesObj.emissions && valuesObj.allowances ) {
-            let calculatedSeries = {
-                data: [
-                    [this.xAxis.categories.indexOf('emissions'), valuesObj.allowances - valuesObj.emissions]
-                ],
-                name: 'Surplus allowances'
-            }
-            suppliedSeries.push(calculatedSeries);
+        var calculatedSeries = {
+            data: [
+                [this.xAxis.categories.indexOf('emissions'), ( valuesObj.allowances && valuesObj.emissions ) ? valuesObj.allowances - valuesObj.emissions : null],
+            ],
+            name: 'Surplus allowances',
+            className: 'surplus-allowances'
         }
+        var extraIntakeSeries = {
+            data: [
+                {
+                    x: this.xAxis.categories.indexOf('intake'), 
+                    y: valuesObj.extra_intake,
+                }
+            ],
+            className: 'extra-intake',
+            name: 'Extra intake'
+        };
+        suppliedSeries.push(calculatedSeries, extraIntakeSeries);
         return suppliedSeries;
   /*      return {
             type: this.chart.type,
@@ -140,7 +149,7 @@ function setPositionalOptions(){
 
 export default { 
     chart: {  
-        height: 140,
+        height: 120,
         type: 'column',
         marginRight: 0,
         /*events: {
@@ -185,7 +194,8 @@ export default {
         labels: {
             y: 7,
             padding: -5,
-            reserveSpace: false 
+            reserveSpace: false ,
+            autoRotation: [0,-45, -65, -75]
         },
         tickLength: 0,
         plotBands: [
@@ -202,11 +212,11 @@ export default {
         plotLines: [{
             value: 1.5,
             label: {
-                text: 'stock',
+                text: 'stocks',
                 className: 'stock-flow',
                 x:8,
-                y:3,
-                align: 'right'
+                y:8,
+                align: 'right',
             },
             className: 'shortdot',
             zIndex:3
@@ -214,11 +224,11 @@ export default {
         {
             value: 1.5,
             label: {
-                text: 'flow',
+                text: 'flows',
                 className: 'stock-flow',
                 x:18,
-                y:3,
-                align: 'left'
+                y:8,
+                align: 'left',
             },
             className: 'shortdot flow',
             zIndex:3
