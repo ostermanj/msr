@@ -179,9 +179,9 @@ export default {
     },           
     title: {
         text: null,
-        margin: 0,
+        margin: 5,
         align: 'center',
-        x: 22,
+        x: 5,
         widthAdjust:0
     },
     tooltip: {
@@ -235,22 +235,27 @@ export default {
         }]
     },
     yAxis: {
-        max:2950, // TO DO: set programmatically
+        max:2850, // TO DO: set programmatically
         gridZIndex:2,
         reversedStacks: false,
         endOnTick:false,
-        //offset: -15,
+        labels: {
+            formatter: function(){
+                return this.axis.defaultLabelFormatter.call(this);
+            },
+            x:-2
+        },
         title: {
             text: 'million tons',
             align:'high',
             reserveSpace: false,    
             rotation: 0,
             margin:0,
-            y: -5,
+            y: -2,
            // offset: -60,
             x: -10
         },
-        tickInterval: 500 
+        tickInterval: 1000 
     },
     /* extends highcharts */
     additionalOnload: function(){
