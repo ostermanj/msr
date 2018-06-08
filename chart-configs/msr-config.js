@@ -101,7 +101,6 @@ function updateCharts(scenario){
     this.children.forEach(chart => {
         console.log(chart, scenario);
         var series = createChildSeries.call(this, chart.userOptions.childData, scenario, true);
-        console.log(series);
         chart.update({series});
     });
 }
@@ -168,9 +167,7 @@ function setPositionalOptions(){
 
 export default { 
     chart: {  
-        animation: {
-            duration: 1000
-        },
+        
         height: 120,
         type: 'column',
         marginRight: 0,
