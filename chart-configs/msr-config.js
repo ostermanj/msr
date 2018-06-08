@@ -51,13 +51,22 @@ function createChildSeries(d, scenario, isUpdate){
     console.log(this);
 
     var valuesObj = d.values.find(m => m.key === scenario).values[0];
+    var colorIndexes = {
+        emissions: 0,
+        tnac: 1,
+        msr: 2,
+        intake: 3,
+        cancel: 5,
+        cancelled: 4
+    };
     var suppliedSeries = this.xAxis.categories.map((c, i) => {
         return ( !isUpdate ) ? { // ON UODATE ONLY UPDATE THE DATA OF THE SERIES, NOT THE OTHER PROPERTIES
                                  // OR THE SERIES WILL BE REPLACED, NOTANIMATED
             data: [
                 [i, valuesObj[c]]
             ],
-            name: c
+            name: c,
+            colorIndex: colorIndexes[c]
         } : {
             data: [
                 [i, valuesObj[c]]
@@ -81,7 +90,8 @@ function createChildSeries(d, scenario, isUpdate){
             }
         ],
         className: 'extra-intake',
-        name: 'Extra intake'
+        name: 'Extra intake',
+        colorIndex: 6
     } : {
         data: [
             {
@@ -168,6 +178,14 @@ function setPositionalOptions(){
     setRowColumnClasses.call(this);
 }
 
+var seriesNames = {
+ 'cancel':      'cancel',
+ 'intake':      'intake',
+ 'emissions':   'emissions',   
+ 'tnac':        'tnac',
+ 'msr':         'msr', 
+ 'cancelled':   'cancelled'
+};
 export default { 
     chart: {  
         
@@ -243,7 +261,10 @@ export default {
             y: 7,
             padding: -5,
             reserveSpace: false ,
-            autoRotation: [0,-45, -65, -75]
+            autoRotation: [0,-45, -65, -75, -90],
+            formatter: function(){
+                return seriesNames[this.value];
+            }
         },
         tickLength: 0,
         plotBands: [
