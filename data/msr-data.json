@@ -28,7 +28,7 @@
     "allowances": 1756,
     "emissions": 1684,
     "msr": 666,
-    "cancelled": 0,
+    "cancelled": null,
     "intake": 416,
     "extra_intake": 250
   },
@@ -39,7 +39,7 @@
     "allowances": 1824,
     "emissions": 1639,
     "msr": 2299,
-    "cancelled": 0,
+    "cancelled": null,
     "intake": 333,
     "extra_intake": 1300
   },
@@ -50,7 +50,7 @@
     "allowances": 1739,
     "emissions": 1656,
     "msr": 2597,
-    "cancelled": 0,
+    "cancelled": null,
     "intake": 298,
     "extra_intake": null
   },
@@ -61,7 +61,7 @@
     "allowances": 1933,
     "emissions": 1627,
     "msr": 2843,
-    "cancelled": 0,
+    "cancelled": null,
     "intake": 246,
     "extra_intake": null
   },

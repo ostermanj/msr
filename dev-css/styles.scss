@@ -9,17 +9,24 @@
 }
 .highcharts-tooltip {
   width:105px;
-    font-size: 0.7em;
+  font-size: 0.7em;
   line-height: 110%;
+  background-color: rgba(243,247,250, 0.9);
+  padding:6px;
+   font-variant-numeric: tabular-nums;
+  -moz-font-feature-settings: "tnum";
+  -webkit-font-feature-settings: "tnum";
+  font-feature-settings: "tnum";
   span {
     position: relative !important;
     white-space: normal !important;
+    top: 0 !important;
+    left: 0 !important;
   }
 }
+
 .highcharts-tooltip-box {
-  fill: rgb(243,247,250);
-  fill-opacity: 0.9;
-  stroke-width: 0;
+  dispolay: none;
 }
 .surplus-allowances rect {
   fill: #f15c80;
