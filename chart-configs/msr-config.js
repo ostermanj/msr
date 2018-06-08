@@ -5,6 +5,7 @@ import { dataController } from '../dev-js/highchart-app.js';
 function createCharts(data, scenario){
     var ChartConfig = function(parentConfig, y, i){
         console.log(this, parentConfig, y);
+        this.currentCategory = this.initialCategory;
         this.indexInSet= i;
         this.childData = y;
         this.series = createChildSeries.call(this, y, scenario);
@@ -47,7 +48,8 @@ function createCharts(data, scenario){
 }
 
 function createChildSeries(d, scenario, isUpdate){ 
-    console.log(d);
+    console.log(this);
+
     var valuesObj = d.values.find(m => m.key === scenario).values[0];
     var suppliedSeries = this.xAxis.categories.map((c, i) => {
         return ( !isUpdate ) ? { // ON UODATE ONLY UPDATE THE DATA OF THE SERIES, NOT THE OTHER PROPERTIES
@@ -99,6 +101,7 @@ function createSeries(data){
 
 function updateCharts(scenario){
     this.children.forEach(chart => {
+        chart.userOptions.currentCategory = scenario;
         console.log(chart, scenario);
         var series = createChildSeries.call(this, chart.userOptions.childData, scenario, true);
         chart.update({series});
@@ -206,7 +209,25 @@ export default {
     },
     tooltip: {
         valueDecimals: 0,
-        valueSuffix: ' million tons'
+        valueSuffix: ' million tons',
+        useHTML: true,
+        shape: 'square',
+        formatter: function(){
+            console.log(this);
+            var scenario = this.series.chart.userOptions.currentCategory;
+            var values = this.series.chart.userOptions.childData.values.find(obj => obj.key === scenario).values[0];
+            console.log(values);
+            var year = this.series.chart.userOptions.childData.key;
+            return `<span style="${this.x === 'msr' ? 'font-weight:bold' : ''}">MSR stock: ${ values.msr !== null ? Highcharts.numberFormat(values.msr, 0, '.',',') : 'n.a.'}</span><br />
+                    <span style="${this.x === 'tnac' ? 'font-weight:bold' : ''}">TNAC: ${Highcharts.numberFormat(values.tnac, 0, '.',',')}</span><br />
+                    <span style="${this.x === 'cap' ? 'font-weight:bold' : ''}">Cap: ${ values.allowances !== null ? Highcharts.numberFormat(values.allowances, 0, '.',',') : 'n.a.'}</span><br />
+                    <span style="${this.x === 'emissions' ? 'font-weight:bold' : ''}">Emiss.: ${Highcharts.numberFormat(values.emissions, 0, '.',',')}</span><br />
+                    <span style="${this.x === 'surplus' ? 'font-weight:bold' : ''}">Surplus: ${ values.allowances !== null ? Highcharts.numberFormat(values.allowances - values.emissions, 0, '.',',') : 'n.a.'}</span><br />
+                    <span style="${this.x === 'intake' ? 'font-weight:bold' : ''}">MSR intake: ${ year > 2018 ? Highcharts.numberFormat(values.intake, 0, '.',',') : 'n.a.'}</span><br />
+                    ${ ( values.extra_intake ) ? 'Add\'l intake: ' + Highcharts.numberFormat(values.extra_intake, 0, '.',',') + '<br />' : ''}
+                    <span style="${this.x === 'cancelled' ? 'font-weight:bold' : ''}">Cancelled: ${ values.cancelled !== null ? Highcharts.numberFormat(values.cancelled, 0, '.',',') : 'n.a.'}</span>`;
+        },
+        //padding: 4
     },
     xAxis: {
         categories: [ 'msr', 'tnac', 'emissions', 'intake', 'cancelled'], 

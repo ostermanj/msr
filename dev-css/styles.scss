@@ -7,7 +7,20 @@
   fill: #fff;
   fill-opacity: 1
 }
-
+.highcharts-tooltip {
+  width:105px;
+    font-size: 0.7em;
+  line-height: 110%;
+  span {
+    position: relative !important;
+    white-space: normal !important;
+  }
+}
+.highcharts-tooltip-box {
+  fill: rgb(243,247,250);
+  fill-opacity: 0.9;
+  stroke-width: 0;
+}
 .surplus-allowances rect {
   fill: #f15c80;
 }
@@ -46,6 +59,10 @@ g.highcharts-plot-lines-0 {
     margin-bottom:0;
   }
   .highcharts-container {
+    overflow:visible;
+    svg {
+      overflow: visible;
+    }
     .highcharts-yaxis-labels, .highcharts-yaxis .highcharts-axis-title, .highcharts-xaxis-labels   {
       display:none;
     }
@@ -58,9 +75,6 @@ g.highcharts-plot-lines-0 {
       overflow: visible;
       .highcharts-xaxis-labels {
         display:inline;
-      }
-      svg {
-        overflow: visible;
       }
     }
   }
