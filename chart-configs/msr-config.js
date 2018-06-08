@@ -2,12 +2,12 @@ const dataSource = require('../data/msr-data.json');
 import { dataController } from '../dev-js/highchart-app.js';
 //import { sharedMethods } from '../dev-js/shared-methods.js';
 
-function createCharts(data){
+function createCharts(data, scenario){
     var ChartConfig = function(parentConfig, y, i){
         console.log(this, parentConfig, y);
         this.indexInSet= i;
         this.childData = y;
-        this.series = createChildSeries.call(this,y);
+        this.series = createChildSeries.call(this, y, scenario);
         for ( var key in parentConfig ) { // take the the ownProperties of the parent config and make them
                                           // the own properties of the child. Highcharts config obj won't work
                                           // with prototypically inherited properties  
@@ -18,7 +18,7 @@ function createCharts(data){
         this.title.text = y.key;
         this.yAxis.plotLines = [
             {
-                value: this.childData.values.find(m => m.key === this.initialCategory).values[0].allowances,
+                value: this.childData.values.find(m => m.key === scenario).values[0].allowances,
                 label: {
                     className: 'cap',
                     text: 'cap',
@@ -30,41 +30,6 @@ function createCharts(data){
         ];
     }
     ChartConfig.prototype = this;   
-
-    function createChildSeries(d){ 
-        var valuesObj = d.values.find(m => m.key === this.initialCategory).values[0];
-        var suppliedSeries = this.xAxis.categories.map((c, i) => {
-            return {
-                data: [
-                    [i, valuesObj[c]]
-                ],
-                name: c
-            };
-        });
-        var calculatedSeries = {
-            data: [
-                [this.xAxis.categories.indexOf('emissions'), ( valuesObj.allowances && valuesObj.emissions ) ? valuesObj.allowances - valuesObj.emissions : null],
-            ],
-            name: 'Surplus allowances',
-            className: 'surplus-allowances'
-        }
-        var extraIntakeSeries = {
-            data: [
-                {
-                    x: this.xAxis.categories.indexOf('intake'), 
-                    y: valuesObj.extra_intake,
-                }
-            ],
-            className: 'extra-intake',
-            name: 'Extra intake'
-        };
-        suppliedSeries.push(calculatedSeries, extraIntakeSeries);
-        return suppliedSeries;
-  /*      return {
-            type: this.chart.type,
-            data: this.xAxis.categories.map(c => valuesObj[c])
-        };*/
-    }
 
     console.log(this.index);
     var parentContainer = document.getElementById('chart-' + this.index);
@@ -81,10 +46,64 @@ function createCharts(data){
 
 }
 
+function createChildSeries(d, scenario, isUpdate){ 
+    console.log(d);
+    var valuesObj = d.values.find(m => m.key === scenario).values[0];
+    var suppliedSeries = this.xAxis.categories.map((c, i) => {
+        return ( !isUpdate ) ? { // ON UODATE ONLY UPDATE THE DATA OF THE SERIES, NOT THE OTHER PROPERTIES
+                                 // OR THE SERIES WILL BE REPLACED, NOTANIMATED
+            data: [
+                [i, valuesObj[c]]
+            ],
+            name: c
+        } : {
+            data: [
+                [i, valuesObj[c]]
+            ]};
+    });
+    var calculatedSeries = ( !isUpdate ) ? {
+        data: [
+            [this.xAxis.categories.indexOf('emissions'), ( valuesObj.allowances && valuesObj.emissions ) ? valuesObj.allowances - valuesObj.emissions : null],
+        ],
+        name: 'Surplus allowances',
+        className: 'surplus-allowances'
+    } : {
+        data: [
+            [this.xAxis.categories.indexOf('emissions'), ( valuesObj.allowances && valuesObj.emissions ) ? valuesObj.allowances - valuesObj.emissions : null],
+        ]};
+    var extraIntakeSeries = ( !isUpdate ) ? {
+        data: [
+            {
+                x: this.xAxis.categories.indexOf('intake'), 
+                y: valuesObj.extra_intake,
+            }
+        ],
+        className: 'extra-intake',
+        name: 'Extra intake'
+    } : {
+        data: [
+            {
+                x: this.xAxis.categories.indexOf('intake'), 
+                y: valuesObj.extra_intake,
+            }
+        ]};
+    suppliedSeries.push(calculatedSeries, extraIntakeSeries);
+    return suppliedSeries;
+}
+
 function createSeries(data){
     console.log(this, data);
-    createCharts.call(this, data);
+    createCharts.call(this, data, this.initialCategory);
 
+}
+
+function updateCharts(scenario){
+    this.children.forEach(chart => {
+        console.log(chart, scenario);
+        var series = createChildSeries.call(this, chart.userOptions.childData, scenario, true);
+        console.log(series);
+        chart.update({series});
+    });
 }
 
 function setPositionalOptions(){
@@ -149,6 +168,9 @@ function setPositionalOptions(){
 
 export default { 
     chart: {  
+        animation: {
+            duration: 1000
+        },
         height: 120,
         type: 'column',
         marginRight: 0,
@@ -168,6 +190,7 @@ export default {
         enabled: false
     },
     plotOptions: {
+        
         column: {
          //   colorByPoint: true
             stacking: 'normal',
@@ -235,7 +258,8 @@ export default {
         }]
     },
     yAxis: {
-        max:2850, // TO DO: set programmatically
+        max:2875, // TO DO: set programmatically,
+        min: 0,
         gridZIndex:2,
         reversedStacks: false,
         endOnTick:false,
@@ -269,7 +293,15 @@ export default {
     initialCategory: 'normal',
     isMultiple: true,
     seriesCreator: createSeries,
-    updateFunction: null,
-    userOptions: null,
+    updateFunction: updateCharts,
+    userOptions: {
+        type: 'radio',
+        options: [
+            {key: 'slow', value: 'Slow'},
+            {key: 'normal', value: 'Normal'},
+            {key: 'fast', value: 'Fast'}
+        ],
+        legend: 'Mitigation'
+    },
     note: null
 };

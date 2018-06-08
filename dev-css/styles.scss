@@ -37,6 +37,9 @@ g.highcharts-plot-lines-0 {
 .multiple-chart-container {
   display: flex;
   flex-wrap: wrap;
+  form {
+    width: 100%;
+  }
   .chart-container {
     width: 105px;
     padding-bottom: 0;

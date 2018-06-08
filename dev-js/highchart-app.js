@@ -85,8 +85,8 @@ var fullAPI = (function(){
             this.charts = []; 
             chartConfigs.forEach((options,i) => {
                 options.index = i;
+                createUserOptions(options, i);
                 options.series = options.seriesCreator(options.dataSource);
-                createUserOptions(options);
                 if ( !options.isMultiple ){
                     options.Highchart = new Highcharts.chart('chart-' + i, options);
                     this.charts.push(options.Highchart);
