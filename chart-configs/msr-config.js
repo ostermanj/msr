@@ -24,7 +24,7 @@ function createCharts(data, scenario){
                     className: 'cap',
                     text: 'cap',
                     y:-10,
-                    x:13,
+                    x:5,
                     align: 'center'
                 }
             }
@@ -234,7 +234,7 @@ export default {
         }
     },
     xAxis: {
-        categories: [ 'msr', 'tnac', 'emissions', 'intake', 'cancelled'], 
+        categories: [ 'cancel', 'intake', 'emissions','tnac','msr','cancelled'], 
 
         labels: {
             y: 7,
@@ -245,19 +245,19 @@ export default {
         tickLength: 0,
         plotBands: [
             {
-                from: -0.5,
+                from: -1.5,
                 to: 1.5,
                 zIndex:1
             },{
                 from: 2.5,
-                to: 4.5,
+                to: 5.5,
                 zIndex:1
             }
         ],
         plotLines: [{
-            value: 1.5,
+            value: 2.5,
             label: {
-                text: 'stocks',
+                text: 'flows',
                 className: 'stock-flow',
                 x:8,
                 y:8,
@@ -267,9 +267,9 @@ export default {
             zIndex:3
         },
         {
-            value: 1.5,
+            value: 2.5,
             label: {
-                text: 'flows',
+                text: 'stocks',
                 className: 'stock-flow',
                 x:18,
                 y:8,
@@ -280,7 +280,7 @@ export default {
         }]
     },
     yAxis: {
-        max:2875, // TO DO: set programmatically,
+        max:3720, // TO DO: set programmatically,
         min: 0,
         gridZIndex:2,
         reversedStacks: false,

@@ -26,7 +26,7 @@
 }
 
 .highcharts-tooltip-box {
-  dispolay: none;
+  display: none;
 }
 .surplus-allowances rect {
   fill: #f15c80;
@@ -53,15 +53,20 @@ g.highcharts-plot-lines-0 {
 .highcharts-point {
   stroke-width: 0;
 }
+.highcharts-title {
+    font-size:0.977em;
+    font-weight: bold;
+  }
 
 .multiple-chart-container {
   display: flex;
   flex-wrap: wrap;
+  
   form {
     width: 100%;
   }
   .chart-container {
-    width: 105px;
+    width: 123px;
     padding-bottom: 0;
     margin-bottom:0;
   }
@@ -288,7 +293,7 @@ g.highcharts-annotation[visibility="hidden"]{
     //background-image-size: 50%;
  }
 
-.highcharts-title {
+.charts-container .highcharts-title {
     font-size:1.15em;
     font-weight: bold;
 }

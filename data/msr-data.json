@@ -1,15 +1,16 @@
 [
-  {
+  /*{
     "mitigation": "normal",
     "year": 2017,
     "tnac": 1700,
     "allowances": null,
     "emissions": 1794,
     "msr": null,
-    "cancelled": null,
+    "cancel": null,
     "intake": null,
-    "extra_intake": null
-  },
+    "extra_intake": null,
+    "cancelled": null
+  },*/
   {
     "mitigation": "normal",
     "year": 2018,
@@ -17,9 +18,10 @@
     "allowances": 1787,
     "emissions": 1754,
     "msr": null,
-    "cancelled": null,
+    "cancel": null,
     "intake": null,
-    "extra_intake": null
+    "extra_intake": null,
+    "cancelled": null
   },
   {
     "mitigation": "normal",
@@ -28,9 +30,10 @@
     "allowances": 1756,
     "emissions": 1684,
     "msr": 666,
-    "cancelled": null,
+    "cancel": null,
     "intake": 416,
-    "extra_intake": 250
+    "extra_intake": 250,
+    "cancelled": null
   },
   {
     "mitigation": "normal",
@@ -39,9 +42,10 @@
     "allowances": 1824,
     "emissions": 1639,
     "msr": 2299,
-    "cancelled": null,
+    "cancel": null,
     "intake": 333,
-    "extra_intake": 1300
+    "extra_intake": 1300,
+    "cancelled": null
   },
   {
     "mitigation": "normal",
@@ -50,9 +54,10 @@
     "allowances": 1739,
     "emissions": 1656,
     "msr": 2597,
-    "cancelled": null,
+    "cancel": null,
     "intake": 298,
-    "extra_intake": null
+    "extra_intake": null,
+    "cancelled": null
   },
   {
     "mitigation": "normal",
@@ -61,9 +66,10 @@
     "allowances": 1933,
     "emissions": 1627,
     "msr": 2843,
-    "cancelled": null,
+    "cancel": null,
     "intake": 246,
-    "extra_intake": null
+    "extra_intake": null,
+    "cancelled": null
   },
   {
     "mitigation": "normal",
@@ -72,9 +78,10 @@
     "allowances": 1695,
     "emissions": 1565,
     "msr": 960,
-    "cancelled": 2144,
+    "cancel": 2144,
     "intake": 261,
-    "extra_intake": null
+    "extra_intake": null,
+    "cancelled": 2144
   },
   {
     "mitigation": "normal",
@@ -83,9 +90,10 @@
     "allowances": 1740,
     "emissions": 1590,
     "msr": 772,
-    "cancelled": 303,
+    "cancel": 303,
     "intake": 115,
-    "extra_intake": null
+    "extra_intake": null,
+    "cancelled": 2447
   },
   {
     "mitigation": "normal",
@@ -94,9 +102,10 @@
     "allowances": 1613,
     "emissions": 1501,
     "msr": 891,
-    "cancelled": 0,
+    "cancel": 0,
     "intake": 119,
-    "extra_intake": null
+    "extra_intake": null,
+    "cancelled": 2447
   },
   {
     "mitigation": "normal",
@@ -105,9 +114,10 @@
     "allowances": 1547,
     "emissions": 1501,
     "msr": 861,
-    "cancelled": 147,
+    "cancel": 147,
     "intake": 118,
-    "extra_intake": null
+    "extra_intake": null,
+    "cancelled": 2594
   },
   {
     "mitigation": "normal",
@@ -116,9 +126,10 @@
     "allowances": 1520,
     "emissions": 1464,
     "msr": 826,
-    "cancelled": 145,
+    "cancel": 145,
     "intake": 109,
-    "extra_intake": null
+    "extra_intake": null,
+    "cancelled": 2739
   },
   {
     "mitigation": "normal",
@@ -127,9 +138,10 @@
     "allowances": 1493,
     "emissions": 1414,
     "msr": 801,
-    "cancelled": 128,
+    "cancel": 128,
     "intake": 103,
-    "extra_intake": null
+    "extra_intake": null,
+    "cancelled": 2867
   },
   {
     "mitigation": "normal",
@@ -138,9 +150,10 @@
     "allowances": 1466,
     "emissions": 1370,
     "msr": 776,
-    "cancelled": 124,
+    "cancel": 124,
     "intake": 100,
-    "extra_intake": null
+    "extra_intake": null,
+    "cancelled": 2991
   },
   {
     "mitigation": "normal",
@@ -149,21 +162,23 @@
     "allowances": 1431,
     "emissions": 1269,
     "msr": 652,
-    "cancelled": 125,
+    "cancel": 125,
     "intake": 0,
-    "extra_intake": null
+    "extra_intake": null,
+    "cancelled": 3116
   },
-  {
+  /*{
     "mitigation": "fast",
     "year": 2017,
     "tnac": 1700,
     "allowances": null,
     "emissions": 1809,
     "msr": null,
-    "cancelled": null,
+    "cancel": null,
     "intake": null,
-    "extra_intake": null
-  },
+    "extra_intake": null,
+    "cancelled": null
+  },*/
   {
     "mitigation": "fast",
     "year": 2018,
@@ -171,9 +186,10 @@
     "allowances": 1787,
     "emissions": 1750,
     "msr": null,
-    "cancelled": null,
+    "cancel": null,
     "intake": null,
-    "extra_intake": null
+    "extra_intake": null,
+    "cancelled": null
   },
   {
     "mitigation": "fast",
@@ -182,9 +198,10 @@
     "allowances": 1756,
     "emissions": 1683,
     "msr": 667,
-    "cancelled": 0,
+    "cancel": null,
     "intake": 417,
-    "extra_intake": 250
+    "extra_intake": 250,
+    "cancelled": null
   },
   {
     "mitigation": "fast",
@@ -193,9 +210,10 @@
     "allowances": 1824,
     "emissions": 1642,
     "msr": 2301,
-    "cancelled": 0,
+    "cancel": null,
     "intake": 334,
-    "extra_intake": 1300
+    "extra_intake": 1300,
+    "cancelled": null
   },
   {
     "mitigation": "fast",
@@ -204,9 +222,10 @@
     "allowances": 1739,
     "emissions": 1582,
     "msr": 2599,
-    "cancelled": 0,
+    "cancel": null,
     "intake": 298,
-    "extra_intake": null
+    "extra_intake": null,
+    "cancelled": null
   },
   {
     "mitigation": "fast",
@@ -215,9 +234,10 @@
     "allowances": 1933,
     "emissions": 1522,
     "msr": 2863,
-    "cancelled": 0,
+    "cancel": null,
     "intake": 264,
-    "extra_intake": null
+    "extra_intake": null,
+    "cancelled": null
   },
   {
     "mitigation": "fast",
@@ -226,9 +246,10 @@
     "allowances": 1695,
     "emissions": 1462,
     "msr": 981,
-    "cancelled": 2182,
+    "cancel": 2182,
     "intake": 299,
-    "extra_intake": null
+    "extra_intake": null,
+    "cancelled": 2182
   },
   {
     "mitigation": "fast",
@@ -237,9 +258,10 @@
     "allowances": 1740,
     "emissions": 1402,
     "msr": 760,
-    "cancelled": 362,
+    "cancel": 362,
     "intake": 142,
-    "extra_intake": null
+    "extra_intake": null,
+    "cancelled": 2544
   },
   {
     "mitigation": "fast",
@@ -248,9 +270,10 @@
     "allowances": 1613,
     "emissions": 1342,
     "msr": 914,
-    "cancelled": 12,
+    "cancel": 12,
     "intake": 165,
-    "extra_intake": null
+    "extra_intake": null,
+    "cancelled": 2556
   },
   {
     "mitigation": "fast",
@@ -259,9 +282,10 @@
     "allowances": 1547,
     "emissions": 1282,
     "msr": 875,
-    "cancelled": 216,
+    "cancel": 216,
     "intake": 178,
-    "extra_intake": null
+    "extra_intake": null,
+    "cancelled": 2772
   },
   {
     "mitigation": "fast",
@@ -270,9 +294,10 @@
     "allowances": 1520,
     "emissions": 1222,
     "msr": 845,
-    "cancelled": 218,
+    "cancel": 218,
     "intake": 188,
-    "extra_intake": null
+    "extra_intake": null,
+    "cancelled": 2990
   },
   {
     "mitigation": "fast",
@@ -281,9 +306,10 @@
     "allowances": 1493,
     "emissions": 1162,
     "msr": 820,
-    "cancelled": 226,
+    "cancel": 226,
     "intake": 202,
-    "extra_intake": null
+    "extra_intake": null,
+    "cancelled": 3216
   },
   {
     "mitigation": "fast",
@@ -292,9 +318,10 @@
     "allowances": 1466,
     "emissions": 1102,
     "msr": 795,
-    "cancelled": 242,
+    "cancel": 242,
     "intake": 217,
-    "extra_intake": null
+    "extra_intake": null,
+    "cancelled": 3458
   },
   {
     "mitigation": "fast",
@@ -303,21 +330,23 @@
     "allowances": 1431,
     "emissions": 1042,
     "msr": 769,
-    "cancelled": 260,
+    "cancel": 260,
     "intake": 235,
-    "extra_intake": null
+    "extra_intake": null,
+    "cancelled": 3718
   },
-  {
+  /*{
     "mitigation": "slow",
     "year": 2017,
     "tnac": 1700,
     "allowances": null,
     "emissions": 1776,
     "msr": null,
-    "cancelled": null,
+    "cancel": null,
     "intake": null,
-    "extra_intake": null
-  },
+    "extra_intake": null,
+    "cancelled": null
+  },*/
   {
     "mitigation": "slow",
     "year": 2018,
@@ -325,9 +354,10 @@
     "allowances": 1787,
     "emissions": 1750,
     "msr": null,
-    "cancelled": null,
+    "cancel": null,
     "intake": null,
-    "extra_intake": null
+    "extra_intake": null,
+    "cancelled": null
   },
   {
     "mitigation": "slow",
@@ -336,9 +366,10 @@
     "allowances": 1756,
     "emissions": 1683,
     "msr": 667,
-    "cancelled": 0,
+    "cancel": null,
     "intake": 417,
-    "extra_intake": 250
+    "extra_intake": 250,
+    "cancelled": null
   },
   {
     "mitigation": "slow",
@@ -347,9 +378,10 @@
     "allowances": 1824,
     "emissions": 1642,
     "msr": 2301,
-    "cancelled": 0,
+    "cancel": null,
     "intake": 334,
-    "extra_intake": 1300
+    "extra_intake": 1300,
+    "cancelled": null
   },
   {
     "mitigation": "slow",
@@ -358,9 +390,10 @@
     "allowances": 1739,
     "emissions": 1622,
     "msr": 2599,
-    "cancelled": 0,
+    "cancel": null,
     "intake": 298,
-    "extra_intake": null
+    "extra_intake": null,
+    "cancelled": null
   },
   {
     "mitigation": "slow",
@@ -369,9 +402,10 @@
     "allowances": 1933,
     "emissions": 1602,
     "msr": 2853,
-    "cancelled": 0,
+    "cancel": null,
     "intake": 254,
-    "extra_intake": null
+    "extra_intake": null,
+    "cancelled": null
   },
   {
     "mitigation": "slow",
@@ -380,9 +414,10 @@
     "allowances": 1695,
     "emissions": 1582,
     "msr": 964,
-    "cancelled": 2162,
+    "cancel": 2162,
     "intake": 273,
-    "extra_intake": null
+    "extra_intake": null,
+    "cancelled": 2162
   },
   {
     "mitigation": "slow",
@@ -391,9 +426,10 @@
     "allowances": 1740,
     "emissions": 1562,
     "msr": 762,
-    "cancelled": 319,
+    "cancel": 319,
     "intake": 117,
-    "extra_intake": null
+    "extra_intake": null,
+    "cancelled": 2481
   },
   {
     "mitigation": "slow",
@@ -402,9 +438,10 @@
     "allowances": 1613,
     "emissions": 1542,
     "msr": 887,
-    "cancelled": 0,
+    "cancel": 0,
     "intake": 125,
-    "extra_intake": null
+    "extra_intake": null,
+    "cancelled": 2481
   },
   {
     "mitigation": "slow",
@@ -413,9 +450,10 @@
     "allowances": 1547,
     "emissions": 1522,
     "msr": 856,
-    "cancelled": 149,
+    "cancel": 149,
     "intake": 118,
-    "extra_intake": null
+    "extra_intake": null,
+    "cancelled": 2630
   },
   {
     "mitigation": "slow",
@@ -424,9 +462,10 @@
     "allowances": 1520,
     "emissions": 1502,
     "msr": 823,
-    "cancelled": 139,
+    "cancel": 139,
     "intake": 107,
-    "extra_intake": null
+    "extra_intake": null,
+    "cancelled": 2769
   },
   {
     "mitigation": "slow",
@@ -435,9 +474,10 @@
     "allowances": 1493,
     "emissions": 1482,
     "msr": 700,
-    "cancelled": 123,
+    "cancel": 123,
     "intake": 0,
-    "extra_intake": null
+    "extra_intake": null,
+    "cancelled": 2892
   },
   {
     "mitigation": "slow",
@@ -446,9 +486,10 @@
     "allowances": 1466,
     "emissions": 1462,
     "msr": 700,
-    "cancelled": 0,
+    "cancel": 0,
     "intake": 0,
-    "extra_intake": null
+    "extra_intake": null,
+    "cancelled": 2892
   },
   {
     "mitigation": "slow",
@@ -457,8 +498,9 @@
     "allowances": 1431,
     "emissions": 1442,
     "msr": 700,
-    "cancelled": 0,
+    "cancel": 0,
     "intake": 0,
-    "extra_intake": null
+    "extra_intake": null,
+    "cancelled": 2892
   }
 ]
