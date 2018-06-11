@@ -259,21 +259,22 @@ export default {
 
         labels: {
             y: 7,
-            padding: -5,
+            padding: -10,
             reserveSpace: false ,
-            autoRotation: [0,-45, -65, -75, -90],
+            rotation: -65,
             formatter: function(){
                 return seriesNames[this.value];
             }
         },
+        tickPositions: [0,1,2,3,4,5],
         tickLength: 0,
         plotBands: [
             {
                 from: -1.5,
-                to: 1.5,
+                to: 1,
                 zIndex:1
             },{
-                from: 2.5,
+                from: 3,
                 to: 5.5,
                 zIndex:1
             }
@@ -281,10 +282,10 @@ export default {
         plotLines: [{
             value: 2.5,
             label: {
-                text: 'flows',
+                text: 'flow',
                 className: 'stock-flow',
-                x:8,
-                y:8,
+                x:12,
+                y:6,
                 align: 'right',
             },
             className: 'shortdot',
@@ -293,10 +294,10 @@ export default {
         {
             value: 2.5,
             label: {
-                text: 'stocks',
+                text: 'stock',
                 className: 'stock-flow',
-                x:18,
-                y:8,
+                x:16,
+                y:6,
                 align: 'left',
             },
             className: 'shortdot flow',
@@ -325,7 +326,7 @@ export default {
            // offset: -60,
             x: -10
         },
-        tickInterval: 1000 
+        tickPositions: [0,1000,2000,3000] 
     },
     /* extends highcharts */
     additionalOnload: function(){

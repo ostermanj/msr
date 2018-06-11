@@ -66,7 +66,7 @@ g.highcharts-plot-lines-0 {
     width: 100%;
   }
   .chart-container {
-    width: 122px;
+    width: 110px;
     padding-bottom: 0;
     margin-bottom:0;
   }
@@ -275,6 +275,9 @@ g.highcharts-annotation[visibility="hidden"]{
   color: #58585b;
   font-size:0.8em;
   line-height:140%;
+  &.multiple {
+    font-size: 0.68em;
+  }
 }
 /*
  * overrides to highcharts css
@@ -301,7 +304,7 @@ g.highcharts-annotation[visibility="hidden"]{
 .highcharts-yaxis .highcharts-axis-title {
     font-style: italic;
     .multiple-chart-container & {
-      font-size: 0.65em;
+      font-size: 0.75em;
     }
 
 }
@@ -309,7 +312,7 @@ g.highcharts-annotation[visibility="hidden"]{
 .highcharts-stack-labels, .highcharts-axis-labels, .highcharts-legend-item text, .highcharts-plot-line-label  {
     font-size: 0.85em;
     .multiple-chart-container & {
-      font-size: 0.65em;
+      font-size: 0.75em;
       line-height: 0;
     }
   
