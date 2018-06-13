@@ -86,11 +86,13 @@ var fullAPI = (function(){
             chartConfigs.forEach((options,i) => {
                 options.index = i;
                 createUserOptions(options, i);
-                options.series = options.seriesCreator(options.dataSource);
+                options.series = options.series || options.seriesCreator(options.dataSource);
                 if ( !options.isMultiple ){
                     options.Highchart = new Highcharts.chart('chart-' + i, options);
                     this.charts.push(options.Highchart);
-                    options.updateFunction(...options.initialUpdateParams); 
+                    if ( options.updateFunction ) {
+                        options.updateFunction(...options.initialUpdateParams); 
+                    }
                 } else {
                     console.log('isMultiple');
                 }
