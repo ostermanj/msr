@@ -25,7 +25,9 @@ function onLoadFunction(){
     addNote.call(this);
     adjustYAxesTitlePositions.call(this);
     console.log(this);
-    this.userOptions.additionalOnload.call(this);
+    if ( this.userOptions.additionalOnload ) {
+        this.userOptions.additionalOnload.call(this);
+    }
 }
 
 export const HighchartsDefaults = {

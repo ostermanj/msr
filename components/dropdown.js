@@ -1,16 +1,24 @@
-export default function(options){
+export default function(options, j){
+    var container = document.getElementById('chart-' + j);
+    if ( options.userOptions.legend ){
+        let label = document.createElement('label');
+        label.setAttribute('for', 'chart-' + j + '-dropdown');
+        label.innerHTML = options.userOptions.legend;
+        container.insertAdjacentHTML('beforebegin', label.outerHTML);
+    }
     var dropdown = document.createElement('select');
+    dropdown.setAttribute('id', 'chart-' + j + '-dropdown');
     options.userOptions.options.forEach((s,i) => {
         var option = document.createElement('option');
         option.setAttribute('value', s.key);
         option.innerHTML = s.value;
         dropdown.appendChild(option);
     });
-    options.Highchart.renderTo.insertAdjacentHTML('afterbegin', dropdown.outerHTML);
-    console.log(options.Highchart.renderTo);
-    var rendered = options.Highchart.renderTo.querySelector('select');
-    rendered.value = options.initialCategory;
+    container.insertAdjacentHTML('beforebegin', dropdown.outerHTML);
+    var rendered = document.getElementById('chart-' + j + '-dropdown');
+    
     rendered.onchange = function(){
+        console.log(rendered.value);
         options.updateFunction.call(options,rendered.value);
     };
 };

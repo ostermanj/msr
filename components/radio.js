@@ -3,7 +3,8 @@ export default function(options, j){
     //container.className = ' form-container flex space-between';
     var container = document.getElementById('chart-' + j);
     var form = document.createElement('form');
-    form.className = options.userOptions.type;
+    form.setAttribute('id','chart-' + j + '-radio');
+    form.className = options.userOptions.type + ' highcharts-form';
     var set = document.createElement('fieldset');
     var optionsContainer = document.createElement('div');
     var legend = document.createElement('legend');
@@ -26,9 +27,9 @@ export default function(options, j){
     });
     set.appendChild(optionsContainer);
     form.appendChild(set);
-    container.insertAdjacentHTML('afterbegin', form.outerHTML);
+    container.insertAdjacentHTML('beforebegin', form.outerHTML);
     //console.log(options.Highchart.renderTo);
-    var rendered = container.querySelector('form');
+    var rendered = document.getElementById('chart-' + j + '-radio');
     rendered.querySelectorAll('input').forEach(input => {
         input.onchange = function(){
             options.updateFunction.call(options,this.value);

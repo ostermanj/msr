@@ -1,5 +1,51 @@
 const dataSource = require('../data/sankey.json');
 import { dataController } from '../dev-js/highchart-app.js';
+
+function createSeries(dataSource, year = this.initialCategory){
+    
+    var series =  [{
+        keys: ['from', 'to', 'weight', 'colorIndex', 'className'],
+        
+        type: 'sankey',
+        nodes: [
+          {
+            id: 'reduction',
+            colorIndex: 10,
+            name: '1-ton reduction in emissions'
+          },
+          {
+            id: 'tnac',
+            colorIndex: 1,
+            name: 'Fraction still in circulation'
+          }, {
+            id: 'msr',
+            colorIndex: 2,
+            name: 'Fraction left in reserve'
+          }, {
+            id: 'cancel',
+            colorIndex: 4,
+            name: 'Fraction cancelled'
+          }
+        ]
+        
+    }];
+    console.log(series)
+    return series;
+}
+
+function updateChart(year){
+
+    this.Highchart.update(
+        {
+            series:[{data: dataSource.find(y => y.year === parseInt(year)).data.slice()}]
+        }
+    );
+    //this.Highchart.series[0].setData(dataSource.find(y => y.year === parseInt(year)).data.slice()); 
+    // * important* without slice, the value of data propert would be assigned by reference to datasource
+    // and all future assignments would change the value of the original. slice() makes a shallow copy
+    // so that 2018  can be returned to without overwriting it.
+
+}
 export default { 
     defs: {
         gradient0: { // key
@@ -64,8 +110,8 @@ export default {
         }
     },
     chart: {
-        inverted: true,
-        height: 1200
+        //inverted: true,
+        //height: 1200
         
        
     },
@@ -76,134 +122,41 @@ export default {
           nodePadding: 50,
           nodeWidth: 20,
           dataLabels: {
-            enabled: false
+            inside: false,
+            align: 'right',  
+            overflow: 'none',
+            crop: false
           }
-
         }
 
     },
     title: {
-        text: 'Highcharts Sankey Diagram'
+        text: 'Average outcome of one 1-ton reduction by 2030',
+        margin: 0
     },
 
-    series: [{
-        keys: ['from', 'to', 'weight', 'colorIndex', 'className'],
-        data: dataSource,
-        type: 'sankey',
-        name: 'Sankey demo series',
-        nodes: [
-          {
-            id: 'reduction',
-            colorIndex: 10
-          },
-          {
-            id: 'tnac-0',
-            colorIndex: 1
-          }, {
-            id: 'tnac-1',
-            colorIndex: 1
-          }, {
-            id: 'tnac-2',
-            colorIndex: 1
-          }, {
-            id: 'tnac-3',
-            colorIndex: 1
-          }, {
-            id: 'tnac-4',
-            colorIndex: 1
-          }, {
-            id: 'tnac-5',
-            colorIndex: 1
-          }, {
-            id: 'tnac-6',
-            colorIndex: 1
-          }, {
-            id: 'tnac-7',
-            colorIndex: 1
-          }, {
-            id: 'tnac-8',
-            colorIndex: 1
-          }, {
-            id: 'tnac-9',
-            colorIndex: 1
-          }, {
-            id: 'tnac-10',
-            colorIndex: 1
-          }, {
-            id: 'tnac-11',
-            colorIndex: 1
-          }, {
-            id: 'tnac-12',
-            colorIndex: 1
-          }, {
-            id: 'msr-1',
-            colorIndex: 2
-          }, {
-            id: 'msr-2',
-            colorIndex: 2
-          }, {
-            id: 'msr-3',
-            colorIndex: 2
-          }, {
-            id: 'msr-4',
-            colorIndex: 2
-          }, {
-            id: 'msr-5',
-            colorIndex: 2
-          }, {
-            id: 'msr-6',
-            colorIndex: 2
-          }, {
-            id: 'msr-7',
-            colorIndex: 2
-          }, {
-            id: 'msr-8',
-            colorIndex: 2
-          }, {
-            id: 'msr-9',
-            colorIndex: 2
-          }, {
-            id: 'msr-10',
-            colorIndex: 2
-          }, {
-            id: 'msr-11',
-            colorIndex: 2
-          }, {
-            id: 'msr-12',
-            colorIndex: 2
-          }, {
-            id: 'cancel-5',
-            colorIndex: 4
-          }, {
-            id: 'cancel-6',
-            colorIndex: 4
-          }, {
-            id: 'cancel-7',
-            colorIndex: 4
-          }, {
-            id: 'cancel-8',
-            colorIndex: 4
-          }, {
-            id: 'cancel-9',
-            colorIndex: 4
-          }, {
-            id: 'cancel-10',
-            colorIndex: 4
-          }, {
-            id: 'cancel-11',
-            colorIndex: 4
-          }, {
-            id: 'cancel-12',
-            colorIndex: 4
-          }
-        ]
-    }],
+    tooltip: {
+        enabled: false
+    },
     
     // extends Highcharts options
-    dataSource: null,
-    initialCategory: null,
-    seriesCreator: null,
-    updateFunction: null,
-    userOptions: null,
+    dataSource: dataSource,
+    initialCategory: 2018,
+    seriesCreator: createSeries,
+    updateFunction: updateChart,
+    initialUpdateParams: [2018],
+    userOptions: {
+        type: 'dropdown',
+        options: [
+            {key: '2018', value: 2018},
+            {key: '2020', value: 2020},
+            {key: '2022', value: 2022},
+            {key: '2024', value: 2024},
+            {key: '2026', value: 2026},
+            {key: '2028', value: 2028}
+        ],
+        legend: 'Select year reduction is made'
+    },
     note: null
+    
 };

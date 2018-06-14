@@ -1,60 +1,51 @@
-[
-      ["reduction", "tnac-1", 0.76, 10, "hetero tnac"],
-      ["tnac-1", "tnac-2", 0.5776, 1],
-      ["tnac-2", "tnac-3", 0.439, 1],
-      ["tnac-3", "tnac-4", 0.3336, 1],
-      ["tnac-4", "tnac-5", 0.2536, 1],
-      ["tnac-5", "tnac-6", 0.2231, 1],
-      ["tnac-6", "tnac-7", 0.1964, 1],
-      ["tnac-7", "tnac-8", 0.1728, 1],
-      ["tnac-8", "tnac-9", 0.1521, 1],
-      ["tnac-9", "tnac-10", 0.1338, 1],
-      ["tnac-10", "tnac-11", 0.1178, 1],
-      ["tnac-11", "tnac-12", 0.1178, 1],
+[     
+      {
+            "year": 2018,
+            "data": [
+                  ["reduction", "tnac", 0.12, 11, "hetero tnac"],
+                  ["reduction", "msr", 0.14, 11, "hetero msr"],
+                  ["reduction", "cancel", 0.74, 11, "hetero cancel"]
+            ]
+      },
+      {
+            "year": 2020,
+            "data": [
+                  ["reduction", "tnac", 0.20, 11, "hetero tnac"],
+                  ["reduction", "msr", 0.20, 11, "hetero msr"],
+                  ["reduction", "cancel", 0.60, 11, "hetero cancel"]
+            ]
+      },
+      {
+            "year": 2022,
+            "data": [
+                  ["reduction", "tnac", 0.35, 11, "hetero tnac"],
+                  ["reduction", "msr", 0.29, 11, "hetero msr"],
+                  ["reduction", "cancel", 0.36, 11, "hetero cancel"]
+            ]
+      },
+      {
+            "year": 2024,
+            "data": [
+                  ["reduction", "tnac", 0.5277, 11, "hetero tnac"],
+                  ["reduction", "msr", 0.2765, 11, "hetero msr"],
+                  ["reduction", "cancel", 0.1958, 11, "hetero cancel"]
+            ]
+      },
+      {
+            "year": 2026,
+            "data": [
+                  ["reduction", "tnac", 0.682, 11, "hetero tnac"],
+                  ["reduction", "msr", 0.225, 11, "hetero msr"],
+                  ["reduction", "cancel", 0.093, 11, "hetero cancel"]
+            ]
+      },
+      {
+            "year": 2028,
+            "data": [
+                  ["reduction", "tnac", 0.88, 11, "hetero tnac"],
+                  ["reduction", "msr", 0.10, 11, "hetero msr"],
+                  ["reduction", "cancel", 0.02, 11, "hetero cancel"]
+            ]
+      }
 
-      ["reduction", "msr-1", 0.24, 10, "hetero msr"],
-      ["tnac-1", "msr-2", 0.1824, 1, "hetero"],
-      ["tnac-2", "msr-3", 0.1386, 1, "hetero"],
-      ["tnac-3", "msr-4", 0.1054, 1, "hetero"],
-      ["tnac-4", "msr-5", 0.0801, 1, "hetero"],
-      ["tnac-5", "msr-6", 0.0304, 1, "hetero"],
-      ["tnac-6", "msr-7", 0.0268, 1, "hetero"],
-      ["tnac-7", "msr-8", 0.0236, 1, "hetero"],
-      ["tnac-8", "msr-9", 0.0207, 1, "hetero"],
-      ["tnac-9", "msr-10", 0.0182, 1, "hetero"],
-      ["tnac-10", "msr-11", 0.0161, 1, "hetero"],
-      ["tnac-11", "msr-12", 0, 1, "hetero"],
-
-
-      ["msr-1", "msr-2", 0.24, 2],
-      ["msr-2", "msr-3", 0.4224, 2],
-      ["msr-3", "msr-4", 0.5610, 2],
-      ["msr-4", "msr-5", 0.1638, 2],
-      ["msr-5", "msr-6", 0.1670, 2],
-      ["msr-6", "msr-7", 0.1974, 2],
-      ["msr-7", "msr-8", 0.1871, 2],
-      ["msr-8", "msr-9", 0.1753, 2],
-      ["msr-9", "msr-10", 0.1655, 2],
-      ["msr-10", "msr-11", 0.1553, 2],
-      ["msr-11", "msr-12", 0.1438, 2],
-
-
-
-
-      ["msr-4", "cancel-5", 0.5025, 4, "hetero"],
-      ["msr-5", "cancel-6", 0.0769, 4, "hetero"],
-      ["msr-6", "cancel-7", 0.00, 4, "hetero"],
-      ["msr-7", "cancel-8", 0.0370, 4, "hetero"],
-      ["msr-8", "cancel-9", 0.0354, 4, "hetero"],
-      ["msr-9", "cancel-10", 0.0305, 4, "hetero"],
-      ["msr-10", "cancel-11", 0.0285, 4, "hetero"],
-      ["msr-11", "cancel-12", 0.0276, 4, "hetero"],
-
-      ["cancel-5", "cancel-6", 0.5025, 4],
-      ["cancel-6", "cancel-7", 0.5795, 4],
-      ["cancel-7", "cancel-8", 0.5795, 4],
-      ["cancel-8", "cancel-9", 0.6165, 4],
-      ["cancel-9", "cancel-10", 0.6519, 4],
-      ["cancel-10", "cancel-11", 0.6824, 4],
-      ["cancel-11", "cancel-12", 0.7109, 4],
 ]
