@@ -17,6 +17,7 @@ function createSeries(dataSource, year = this.initialCategory){
             }
         }
         this.title.text = i === 0 ? 'Average outcome of one 1-ton reduction' : 'Marginal outcome of one additional 1-ton reduction';
+        this.plotOptions.sankey.nodePadding = i === 0 ? 50 : 100;
         
     }
     ChartConfig.prototype = this;   
@@ -65,13 +66,17 @@ function createChildSeries(type){
     }];
     
 }
-function updateChart(year){
+function updateCharts(year){
+    console.log(this);
+    this.children.forEach(chart => {
+        chart.userOptions.currentCategory = year;
+        
+        chart.update( {
+            series:[{data: chart.userOptions.childData.find(y => y.year === parseInt(year)).data.slice()}]
+        });
+    });
 
-    this.Highchart.update(
-        {
-            series:[{data: dataSource.find(y => y.year === parseInt(year)).data.slice()}]
-        }
-    );
+
     //this.Highchart.series[0].setData(dataSource.find(y => y.year === parseInt(year)).data.slice()); 
     // * important* without slice, the value of data propert would be assigned by reference to datasource
     // and all future assignments would change the value of the original. slice() makes a shallow copy
@@ -143,7 +148,7 @@ export default {
     },
     chart: {
         //inverted: true,
-        //height: 1200
+        height: 225
         
        
     },
@@ -157,17 +162,24 @@ export default {
             inside: false,
             align: 'right',  
             overflow: 'none',
-            crop: false
+            crop: false,
+            nodeFormatter: function(){
+                console.log(this);
+                return this.point.id === 'reduction' ? this.key : this.key + ': ' + Highcharts.numberFormat(this.point.sum, 2);
+            }
           }
         }
 
     },
     title: {
         text: 'Average outcome of one 1-ton reduction by 2030',
-        margin: 0
+        margin: 30
     },
 
     tooltip: {
+        enabled: false
+    },
+    credits: {
         enabled: false
     },
     
@@ -176,7 +188,7 @@ export default {
     initialCategory: 2018,
     isMultiple: true,
     seriesCreator: createSeries,
-    updateFunction: updateChart,
+    updateFunction: updateCharts,
     initialUpdateParams: [2018],
     userOptions: {
         type: 'dropdown',
