@@ -1,51 +1,96 @@
 [     
-      {
-            "year": 2018,
-            "data": [
-                  ["reduction", "tnac", 0.12, 11, "hetero tnac"],
-                  ["reduction", "msr", 0.14, 11, "hetero msr"],
-                  ["reduction", "cancel", 0.74, 11, "hetero cancel"]
-            ]
-      },
-      {
-            "year": 2020,
-            "data": [
-                  ["reduction", "tnac", 0.20, 11, "hetero tnac"],
-                  ["reduction", "msr", 0.20, 11, "hetero msr"],
-                  ["reduction", "cancel", 0.60, 11, "hetero cancel"]
-            ]
-      },
-      {
-            "year": 2022,
-            "data": [
-                  ["reduction", "tnac", 0.35, 11, "hetero tnac"],
-                  ["reduction", "msr", 0.29, 11, "hetero msr"],
-                  ["reduction", "cancel", 0.36, 11, "hetero cancel"]
-            ]
-      },
-      {
-            "year": 2024,
-            "data": [
-                  ["reduction", "tnac", 0.5277, 11, "hetero tnac"],
-                  ["reduction", "msr", 0.2765, 11, "hetero msr"],
-                  ["reduction", "cancel", 0.1958, 11, "hetero cancel"]
-            ]
-      },
-      {
-            "year": 2026,
-            "data": [
-                  ["reduction", "tnac", 0.682, 11, "hetero tnac"],
-                  ["reduction", "msr", 0.225, 11, "hetero msr"],
-                  ["reduction", "cancel", 0.093, 11, "hetero cancel"]
-            ]
-      },
-      {
-            "year": 2028,
-            "data": [
-                  ["reduction", "tnac", 0.88, 11, "hetero tnac"],
-                  ["reduction", "msr", 0.10, 11, "hetero msr"],
-                  ["reduction", "cancel", 0.02, 11, "hetero cancel"]
-            ]
-      }
+      [
+            {
+                  "year": 2018,
+                  "data": [
+                        ["reduction", "tnac", 0.12, 11, "hetero tnac"],
+                        ["reduction", "msr", 0.14, 11, "hetero msr"],
+                        ["reduction", "cancel", 0.74, 11, "hetero cancel"]
+                  ]
+            },
+            {
+                  "year": 2020,
+                  "data": [
+                        ["reduction", "tnac", 0.20, 11, "hetero tnac"],
+                        ["reduction", "msr", 0.20, 11, "hetero msr"],
+                        ["reduction", "cancel", 0.60, 11, "hetero cancel"]
+                  ]
+            },
+            {
+                  "year": 2022,
+                  "data": [
+                        ["reduction", "tnac", 0.35, 11, "hetero tnac"],
+                        ["reduction", "msr", 0.29, 11, "hetero msr"],
+                        ["reduction", "cancel", 0.36, 11, "hetero cancel"]
+                  ]
+            },
+            {
+                  "year": 2024,
+                  "data": [
+                        ["reduction", "tnac", 0.5277, 11, "hetero tnac"],
+                        ["reduction", "msr", 0.2765, 11, "hetero msr"],
+                        ["reduction", "cancel", 0.1958, 11, "hetero cancel"]
+                  ]
+            },
+            {
+                  "year": 2026,
+                  "data": [
+                        ["reduction", "tnac", 0.682, 11, "hetero tnac"],
+                        ["reduction", "msr", 0.225, 11, "hetero msr"],
+                        ["reduction", "cancel", 0.093, 11, "hetero cancel"]
+                  ]
+            },
+            {
+                  "year": 2028,
+                  "data": [
+                        ["reduction", "tnac", 0.88, 11, "hetero tnac"],
+                        ["reduction", "msr", 0.10, 11, "hetero msr"],
+                        ["reduction", "cancel", 0.02, 11, "hetero cancel"]
+                  ]
+            }
+      ], [
+            {
+                  "year": 2018,
+                  "data": [
+                        ["reduction", "tnac", 0.12, 11, "hetero tnac"],
+                        ["reduction", "cancel", 0.88, 11, "hetero cancel"]
+                  ]
+            },
+            {
+                  "year": 2020,
+                  "data": [
+                        ["reduction", "tnac", 0.20, 11, "hetero tnac"],
+                        ["reduction", "cancel", 0.80, 11, "hetero cancel"]
+                  ]
+            },
+            {
+                  "year": 2022,
+                  "data": [
+                        ["reduction", "tnac", 0.35, 11, "hetero tnac"],
+                        ["reduction", "cancel", 0.65, 11, "hetero cancel"]
+                  ]
+            },
+            {
+                  "year": 2024,
+                  "data": [
+                        ["reduction", "tnac", 0.5277, 11, "hetero tnac"],
+                        ["reduction", "cancel", 0.4723, 11, "hetero cancel"]
+                  ]
+            },
+            {
+                  "year": 2026,
+                  "data": [
+                        ["reduction", "tnac", 0.682, 11, "hetero tnac"],
+                        ["reduction", "cancel", 0.318, 11, "hetero cancel"]
+                  ]
+            },
+            {
+                  "year": 2028,
+                  "data": [
+                        ["reduction", "tnac", 0.88, 11, "hetero tnac"],
+                        ["reduction", "cancel", 0.12, 11, "hetero cancel"]
+                  ]
+            }
+      ]
 
 ]

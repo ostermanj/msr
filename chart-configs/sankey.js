@@ -3,9 +3,43 @@ import { dataController } from '../dev-js/highchart-app.js';
 
 function createSeries(dataSource, year = this.initialCategory){
     
-    var series =  [{
-        keys: ['from', 'to', 'weight', 'colorIndex', 'className'],
+    var ChartConfig = function(parentConfig, type, i){
+        console.log(this, parentConfig, type);
+        this.currentCategory = this.initialCategory;
+        this.indexInSet= i;
+        this.childData = type;
+        this.series = createChildSeries.call(this, type);//, y, scenario);
+        for ( var key in parentConfig ) { // take the the ownProperties of the parent config and make them
+                                          // the own properties of the child. Highcharts config obj won't work
+                                          // with prototypically inherited properties  
+            if ( parentConfig.hasOwnProperty(key) ){
+                this[key] = parentConfig[key];
+            }
+        }
+        this.title.text = i === 0 ? 'Average outcome of one 1-ton reduction' : 'Marginal outcome of one additional 1-ton reduction';
         
+    }
+    ChartConfig.prototype = this;   
+
+    console.log(this.index);
+    var parentContainer = document.getElementById('chart-' + this.index);
+    this.setLength = dataSource.length;
+    this.children = [];
+
+    dataSource.forEach((type, i, array) => {
+        var container = document.createElement('div');
+        container.className = 'chart-container';
+        container.id = 'chart-' + this.index + '-multiple-' + i;
+        parentContainer.appendChild(container);
+        var childConfig = new ChartConfig(this, type, i);
+        this.children.push( new Highcharts.chart('chart-' + this.index + '-multiple-' + i, childConfig) );
+    });
+    
+}
+function createChildSeries(type){
+    return [{
+        keys: ['from', 'to', 'weight', 'colorIndex', 'className'],
+        data: type.find(y => y.year === parseInt(this.initialCategory)).data.slice(),
         type: 'sankey',
         nodes: [
           {
@@ -29,10 +63,8 @@ function createSeries(dataSource, year = this.initialCategory){
         ]
         
     }];
-    console.log(series)
-    return series;
+    
 }
-
 function updateChart(year){
 
     this.Highchart.update(
@@ -142,6 +174,7 @@ export default {
     // extends Highcharts options
     dataSource: dataSource,
     initialCategory: 2018,
+    isMultiple: true,
     seriesCreator: createSeries,
     updateFunction: updateChart,
     initialUpdateParams: [2018],

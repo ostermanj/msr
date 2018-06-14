@@ -93,7 +93,7 @@ var fullAPI = (function(){
                     if ( options.updateFunction ) {
                         options.updateFunction(...options.initialUpdateParams); 
                     }
-                } else {
+                } else { // ie if is multiple, use the seriesCreator function  to initiatiate the charts
                     console.log('isMultiple');
                 }
             });

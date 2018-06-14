@@ -1,8 +1,13 @@
 const dataSource = require('../data/msr-data.json');
 import { dataController } from '../dev-js/highchart-app.js';
 //import { sharedMethods } from '../dev-js/shared-methods.js';
+function createSeries(data){
+    console.log(this, data);
+    createCharts.call(this, data, this.initialCategory);
 
+}
 function createCharts(data, scenario){
+    console.log('in createCharts', scenario);
     var ChartConfig = function(parentConfig, y, i){
         console.log(this, parentConfig, y);
         this.currentCategory = this.initialCategory;
@@ -103,11 +108,7 @@ function createChildSeries(d, scenario, isUpdate){
     return suppliedSeries;
 }
 
-function createSeries(data){
-    console.log(this, data);
-    createCharts.call(this, data, this.initialCategory);
 
-}
 
 function updateCharts(scenario){
     this.children.forEach(chart => {
