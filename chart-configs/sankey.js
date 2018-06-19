@@ -16,7 +16,7 @@ function createSeries(dataSource, year = this.initialCategory){
                 this[key] = parentConfig[key];
             }
         }
-        this.title.text = i === 0 ? 'Average outcome of one 1-ton reduction' : 'Marginal outcome of one additional 1-ton reduction';
+        this.title.text = i === 0 ? 'Average outcome of one 1-ton reduction in 2030' : 'Marginal outcome of one additional 1-ton reduction in 2030';
         this.plotOptions.sankey.nodePadding = i === 0 ? 50 : 100;
         
     }
