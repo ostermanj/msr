@@ -6,9 +6,9 @@
     "allowances": 1787,
     "emissions": 1754,
     "msr": null,
-    "cancelled": null,
+    "cancel": null,
     "intake": null,
-    "total_cancelled": null
+    "cancelled": null
   },
   {
     "mitigation": "Normal",
@@ -17,9 +17,9 @@
     "allowances": 1756,
     "emissions": 1684,
     "msr": 666,
-    "cancelled": null,
+    "cancel": null,
     "intake": 666,
-    "total_cancelled": null
+    "cancelled": null
   },
   {
     "mitigation": "Normal",
@@ -28,9 +28,9 @@
     "allowances": 1824,
     "emissions": 1639,
     "msr": 2299,
-    "cancelled": null,
+    "cancel": null,
     "intake": 1633,
-    "total_cancelled": null
+    "cancelled": null
   },
   {
     "mitigation": "Normal",
@@ -39,9 +39,9 @@
     "allowances": 1739,
     "emissions": 1656,
     "msr": 2597,
-    "cancelled": null,
+    "cancel": null,
     "intake": 298,
-    "total_cancelled": null
+    "cancelled": null
   },
   {
     "mitigation": "Normal",
@@ -50,9 +50,9 @@
     "allowances": 1933,
     "emissions": 1627,
     "msr": 2843,
-    "cancelled": null,
+    "cancel": null,
     "intake": 246,
-    "total_cancelled": null
+    "cancelled": null
   },
   {
     "mitigation": "Normal",
@@ -61,9 +61,9 @@
     "allowances": 1695,
     "emissions": 1565,
     "msr": 960,
-    "cancelled": 2144,
+    "cancel": 2144,
     "intake": 261,
-    "total_cancelled": 2144
+    "cancelled": 2144
   },
   {
     "mitigation": "Normal",
@@ -72,9 +72,9 @@
     "allowances": 1740,
     "emissions": 1590,
     "msr": 772,
-    "cancelled": 303,
+    "cancel": 303,
     "intake": 115,
-    "total_cancelled": 2447
+    "cancelled": 2447
   },
   {
     "mitigation": "Normal",
@@ -83,9 +83,9 @@
     "allowances": 1613,
     "emissions": 1501,
     "msr": 891,
-    "cancelled": 0,
+    "cancel": 0,
     "intake": 119,
-    "total_cancelled": 2447
+    "cancelled": 2447
   },
   {
     "mitigation": "Normal",
@@ -94,9 +94,9 @@
     "allowances": 1547,
     "emissions": 1501,
     "msr": 861,
-    "cancelled": 147,
+    "cancel": 147,
     "intake": 118,
-    "total_cancelled": 2594
+    "cancelled": 2594
   },
   {
     "mitigation": "Normal",
@@ -105,9 +105,9 @@
     "allowances": 1520,
     "emissions": 1464,
     "msr": 826,
-    "cancelled": 145,
+    "cancel": 145,
     "intake": 109,
-    "total_cancelled": 2739
+    "cancelled": 2739
   },
   {
     "mitigation": "Normal",
@@ -116,9 +116,9 @@
     "allowances": 1493,
     "emissions": 1414,
     "msr": 801,
-    "cancelled": 128,
+    "cancel": 128,
     "intake": 103,
-    "total_cancelled": 2867
+    "cancelled": 2867
   },
   {
     "mitigation": "Normal",
@@ -127,9 +127,9 @@
     "allowances": 1466,
     "emissions": 1370,
     "msr": 776,
-    "cancelled": 124,
+    "cancel": 124,
     "intake": 100,
-    "total_cancelled": 2992
+    "cancelled": 2992
   },
   {
     "mitigation": "Normal",
@@ -138,9 +138,9 @@
     "allowances": 1431,
     "emissions": 1269,
     "msr": 652,
-    "cancelled": 125,
+    "cancel": 125,
     "intake": 0,
-    "total_cancelled": 3117
+    "cancelled": 3117
   },
   {
     "mitigation": "-0.50%",
@@ -149,9 +149,9 @@
     "allowances": 1787,
     "emissions": 1754,
     "msr": null,
-    "cancelled": null,
+    "cancel": null,
     "intake": null,
-    "total_cancelled": null
+    "cancelled": null
   },
   {
     "mitigation": "-0.50%",
@@ -160,9 +160,9 @@
     "allowances": 1756,
     "emissions": 1745,
     "msr": 666,
-    "cancelled": 0,
+    "cancel": 0,
     "intake": 666,
-    "total_cancelled": null
+    "cancelled": null
   },
   {
     "mitigation": "-0.50%",
@@ -171,9 +171,9 @@
     "allowances": 1824,
     "emissions": 1737,
     "msr": 2285,
-    "cancelled": 0,
+    "cancel": 0,
     "intake": 1619,
-    "total_cancelled": null
+    "cancelled": null
   },
   {
     "mitigation": "-0.50%",
@@ -182,9 +182,9 @@
     "allowances": 1739,
     "emissions": 1728,
     "msr": 2548,
-    "cancelled": 0,
+    "cancel": 0,
     "intake": 263,
-    "total_cancelled": null
+    "cancelled": null
   },
   {
     "mitigation": "-0.50%",
@@ -193,9 +193,9 @@
     "allowances": 1933,
     "emissions": 1719,
     "msr": 2750,
-    "cancelled": 0,
+    "cancel": 0,
     "intake": 203,
-    "total_cancelled": null
+    "cancelled": null
   },
   {
     "mitigation": "-0.50%",
@@ -204,9 +204,9 @@
     "allowances": 1695,
     "emissions": 1711,
     "msr": 948,
-    "cancelled": 2008,
+    "cancel": 2008,
     "intake": 205,
-    "total_cancelled": 2008
+    "cancelled": 2008
   },
   {
     "mitigation": "-0.50%",
@@ -215,9 +215,9 @@
     "allowances": 1740,
     "emissions": 1702,
     "msr": 712,
-    "cancelled": 236,
+    "cancel": 236,
     "intake": 0,
-    "total_cancelled": 2243
+    "cancelled": 2243
   },
   {
     "mitigation": "-0.50%",
@@ -226,9 +226,9 @@
     "allowances": 1613,
     "emissions": 1694,
     "msr": 712,
-    "cancelled": 0,
+    "cancel": 0,
     "intake": 0,
-    "total_cancelled": 2243
+    "cancelled": 2243
   },
   {
     "mitigation": "-0.50%",
@@ -237,9 +237,9 @@
     "allowances": 1547,
     "emissions": 1685,
     "msr": 712,
-    "cancelled": 0,
+    "cancel": 0,
     "intake": 0,
-    "total_cancelled": 2243
+    "cancelled": 2243
   },
   {
     "mitigation": "-0.50%",
@@ -248,9 +248,9 @@
     "allowances": 1520,
     "emissions": 1677,
     "msr": 712,
-    "cancelled": 0,
+    "cancel": 0,
     "intake": 0,
-    "total_cancelled": 2243
+    "cancelled": 2243
   },
   {
     "mitigation": "-0.50%",
@@ -259,9 +259,9 @@
     "allowances": 1493,
     "emissions": 1668,
     "msr": 612,
-    "cancelled": 0,
+    "cancel": 0,
     "intake": -100,
-    "total_cancelled": 2243
+    "cancelled": 2243
   },
   {
     "mitigation": "-0.50%",
@@ -270,9 +270,9 @@
     "allowances": 1466,
     "emissions": 1660,
     "msr": 512,
-    "cancelled": 0,
+    "cancel": 0,
     "intake": -100,
-    "total_cancelled": 2243
+    "cancelled": 2243
   },
   {
     "mitigation": "-0.50%",
@@ -281,9 +281,9 @@
     "allowances": 1431,
     "emissions": 1652,
     "msr": 412,
-    "cancelled": 0,
+    "cancel": 0,
     "intake": -100,
-    "total_cancelled": 2243
+    "cancelled": 2243
   },
   {
     "mitigation": "-1%",
@@ -292,9 +292,9 @@
     "allowances": 1787,
     "emissions": 1754,
     "msr": null,
-    "cancelled": null,
+    "cancel": null,
     "intake": null,
-    "total_cancelled": null
+    "cancelled": null
   },
   {
     "mitigation": "-1%",
@@ -303,9 +303,9 @@
     "allowances": 1756,
     "emissions": 1737,
     "msr": 666,
-    "cancelled": 0,
+    "cancel": 0,
     "intake": 666,
-    "total_cancelled": null
+    "cancelled": null
   },
   {
     "mitigation": "-1%",
@@ -314,9 +314,9 @@
     "allowances": 1824,
     "emissions": 1719,
     "msr": 2287,
-    "cancelled": 0,
+    "cancel": 0,
     "intake": 1621,
-    "total_cancelled": null
+    "cancelled": null
   },
   {
     "mitigation": "-1%",
@@ -325,9 +325,9 @@
     "allowances": 1739,
     "emissions": 1702,
     "msr": 2556,
-    "cancelled": 0,
+    "cancel": 0,
     "intake": 269,
-    "total_cancelled": null
+    "cancelled": null
   },
   {
     "mitigation": "-1%",
@@ -336,9 +336,9 @@
     "allowances": 1933,
     "emissions": 1685,
     "msr": 2769,
-    "cancelled": 0,
+    "cancel": 0,
     "intake": 213,
-    "total_cancelled": null
+    "cancelled": null
   },
   {
     "mitigation": "-1%",
@@ -347,9 +347,9 @@
     "allowances": 1695,
     "emissions": 1668,
     "msr": 954,
-    "cancelled": 2037,
+    "cancel": 2037,
     "intake": 222,
-    "total_cancelled": 2037
+    "cancelled": 2037
   },
   {
     "mitigation": "-1%",
@@ -358,9 +358,9 @@
     "allowances": 1740,
     "emissions": 1651,
     "msr": 696,
-    "cancelled": 258,
+    "cancel": 258,
     "intake": 0,
-    "total_cancelled": 2294
+    "cancelled": 2294
   },
   {
     "mitigation": "-1%",
@@ -369,9 +369,9 @@
     "allowances": 1613,
     "emissions": 1635,
     "msr": 696,
-    "cancelled": 0,
+    "cancel": 0,
     "intake": 0,
-    "total_cancelled": 2294
+    "cancelled": 2294
   },
   {
     "mitigation": "-1%",
@@ -380,9 +380,9 @@
     "allowances": 1547,
     "emissions": 1619,
     "msr": 696,
-    "cancelled": 0,
+    "cancel": 0,
     "intake": 0,
-    "total_cancelled": 2294
+    "cancelled": 2294
   },
   {
     "mitigation": "-1%",
@@ -391,9 +391,9 @@
     "allowances": 1520,
     "emissions": 1602,
     "msr": 696,
-    "cancelled": 0,
+    "cancel": 0,
     "intake": 0,
-    "total_cancelled": 2294
+    "cancelled": 2294
   },
   {
     "mitigation": "-1%",
@@ -402,9 +402,9 @@
     "allowances": 1493,
     "emissions": 1586,
     "msr": 696,
-    "cancelled": 0,
+    "cancel": 0,
     "intake": 0,
-    "total_cancelled": 2294
+    "cancelled": 2294
   },
   {
     "mitigation": "-1%",
@@ -413,9 +413,9 @@
     "allowances": 1466,
     "emissions": 1571,
     "msr": 696,
-    "cancelled": 0,
+    "cancel": 0,
     "intake": 0,
-    "total_cancelled": 2294
+    "cancelled": 2294
   },
   {
     "mitigation": "-1%",
@@ -424,9 +424,9 @@
     "allowances": 1431,
     "emissions": 1555,
     "msr": 696,
-    "cancelled": 0,
+    "cancel": 0,
     "intake": 0,
-    "total_cancelled": 2294
+    "cancelled": 2294
   },
   {
     "mitigation": "-1.50%",
@@ -435,9 +435,9 @@
     "allowances": 1787,
     "emissions": 1754,
     "msr": null,
-    "cancelled": null,
+    "cancel": null,
     "intake": null,
-    "total_cancelled": null
+    "cancelled": null
   },
   {
     "mitigation": "-1.50%",
@@ -446,9 +446,9 @@
     "allowances": 1756,
     "emissions": 1728,
     "msr": 666,
-    "cancelled": 0,
+    "cancel": 0,
     "intake": 666,
-    "total_cancelled": null
+    "cancelled": null
   },
   {
     "mitigation": "-1.50%",
@@ -457,9 +457,9 @@
     "allowances": 1824,
     "emissions": 1702,
     "msr": 2289,
-    "cancelled": 0,
+    "cancel": 0,
     "intake": 1623,
-    "total_cancelled": null
+    "cancelled": null
   },
   {
     "mitigation": "-1.50%",
@@ -468,9 +468,9 @@
     "allowances": 1739,
     "emissions": 1676,
     "msr": 2563,
-    "cancelled": 0,
+    "cancel": 0,
     "intake": 275,
-    "total_cancelled": null
+    "cancelled": null
   },
   {
     "mitigation": "-1.50%",
@@ -479,9 +479,9 @@
     "allowances": 1933,
     "emissions": 1651,
     "msr": 2787,
-    "cancelled": 0,
+    "cancel": 0,
     "intake": 224,
-    "total_cancelled": null
+    "cancelled": null
   },
   {
     "mitigation": "-1.50%",
@@ -490,9 +490,9 @@
     "allowances": 1695,
     "emissions": 1626,
     "msr": 959,
-    "cancelled": 2066,
+    "cancel": 2066,
     "intake": 238,
-    "total_cancelled": 2066
+    "cancelled": 2066
   },
   {
     "mitigation": "-1.50%",
@@ -501,9 +501,9 @@
     "allowances": 1740,
     "emissions": 1602,
     "msr": 680,
-    "cancelled": 279,
+    "cancel": 279,
     "intake": 0,
-    "total_cancelled": 2345
+    "cancelled": 2345
   },
   {
     "mitigation": "-1.50%",
@@ -512,9 +512,9 @@
     "allowances": 1613,
     "emissions": 1578,
     "msr": 795,
-    "cancelled": 0,
+    "cancel": 0,
     "intake": 115,
-    "total_cancelled": 2345
+    "cancelled": 2345
   },
   {
     "mitigation": "-1.50%",
@@ -523,9 +523,9 @@
     "allowances": 1547,
     "emissions": 1554,
     "msr": 853,
-    "cancelled": 48,
+    "cancel": 48,
     "intake": 106,
-    "total_cancelled": 2393
+    "cancelled": 2393
   },
   {
     "mitigation": "-1.50%",
@@ -534,9 +534,9 @@
     "allowances": 1520,
     "emissions": 1531,
     "msr": 729,
-    "cancelled": 124,
+    "cancel": 124,
     "intake": 0,
-    "total_cancelled": 2516
+    "cancelled": 2516
   },
   {
     "mitigation": "-1.50%",
@@ -545,9 +545,9 @@
     "allowances": 1493,
     "emissions": 1508,
     "msr": 729,
-    "cancelled": 0,
+    "cancel": 0,
     "intake": 0,
-    "total_cancelled": 2516
+    "cancelled": 2516
   },
   {
     "mitigation": "-1.50%",
@@ -556,9 +556,9 @@
     "allowances": 1466,
     "emissions": 1485,
     "msr": 729,
-    "cancelled": 0,
+    "cancel": 0,
     "intake": 0,
-    "total_cancelled": 2516
+    "cancelled": 2516
   },
   {
     "mitigation": "-1.50%",
@@ -567,9 +567,9 @@
     "allowances": 1431,
     "emissions": 1463,
     "msr": 729,
-    "cancelled": 0,
+    "cancel": 0,
     "intake": 0,
-    "total_cancelled": 2516
+    "cancelled": 2516
   },
   {
     "mitigation": "-2%",
@@ -578,9 +578,9 @@
     "allowances": 1787,
     "emissions": 1754,
     "msr": null,
-    "cancelled": null,
+    "cancel": null,
     "intake": null,
-    "total_cancelled": null
+    "cancelled": null
   },
   {
     "mitigation": "-2%",
@@ -589,9 +589,9 @@
     "allowances": 1756,
     "emissions": 1719,
     "msr": 666,
-    "cancelled": 0,
+    "cancel": 0,
     "intake": 666,
-    "total_cancelled": null
+    "cancelled": null
   },
   {
     "mitigation": "-2%",
@@ -600,9 +600,9 @@
     "allowances": 1824,
     "emissions": 1685,
     "msr": 2291,
-    "cancelled": 0,
+    "cancel": 0,
     "intake": 1625,
-    "total_cancelled": null
+    "cancelled": null
   },
   {
     "mitigation": "-2%",
@@ -611,9 +611,9 @@
     "allowances": 1739,
     "emissions": 1651,
     "msr": 2571,
-    "cancelled": 0,
+    "cancel": 0,
     "intake": 280,
-    "total_cancelled": null
+    "cancelled": null
   },
   {
     "mitigation": "-2%",
@@ -622,9 +622,9 @@
     "allowances": 1933,
     "emissions": 1618,
     "msr": 2806,
-    "cancelled": 0,
+    "cancel": 0,
     "intake": 234,
-    "total_cancelled": null
+    "cancelled": null
   },
   {
     "mitigation": "-2%",
@@ -633,9 +633,9 @@
     "allowances": 1695,
     "emissions": 1586,
     "msr": 965,
-    "cancelled": 2094,
+    "cancel": 2094,
     "intake": 254,
-    "total_cancelled": 2094
+    "cancelled": 2094
   },
   {
     "mitigation": "-2%",
@@ -644,9 +644,9 @@
     "allowances": 1740,
     "emissions": 1554,
     "msr": 774,
-    "cancelled": 301,
+    "cancel": 301,
     "intake": 110,
-    "total_cancelled": 2395
+    "cancelled": 2395
   },
   {
     "mitigation": "-2%",
@@ -655,9 +655,9 @@
     "allowances": 1613,
     "emissions": 1523,
     "msr": 892,
-    "cancelled": 0,
+    "cancel": 0,
     "intake": 119,
-    "total_cancelled": 2395
+    "cancelled": 2395
   },
   {
     "mitigation": "-2%",
@@ -666,9 +666,9 @@
     "allowances": 1547,
     "emissions": 1492,
     "msr": 859,
-    "cancelled": 149,
+    "cancel": 149,
     "intake": 115,
-    "total_cancelled": 2544
+    "cancelled": 2544
   },
   {
     "mitigation": "-2%",
@@ -677,9 +677,9 @@
     "allowances": 1520,
     "emissions": 1462,
     "msr": 827,
-    "cancelled": 140,
+    "cancel": 140,
     "intake": 108,
-    "total_cancelled": 2683
+    "cancelled": 2683
   },
   {
     "mitigation": "-2%",
@@ -688,9 +688,9 @@
     "allowances": 1493,
     "emissions": 1433,
     "msr": 801,
-    "cancelled": 128,
+    "cancel": 128,
     "intake": 102,
-    "total_cancelled": 2812
+    "cancelled": 2812
   },
   {
     "mitigation": "-2%",
@@ -699,9 +699,9 @@
     "allowances": 1466,
     "emissions": 1405,
     "msr": 677,
-    "cancelled": 124,
+    "cancel": 124,
     "intake": 0,
-    "total_cancelled": 2935
+    "cancelled": 2935
   },
   {
     "mitigation": "-2%",
@@ -710,9 +710,9 @@
     "allowances": 1431,
     "emissions": 1376,
     "msr": 782,
-    "cancelled": 0,
+    "cancel": 0,
     "intake": 104,
-    "total_cancelled": 2935
+    "cancelled": 2935
   },
   {
     "mitigation": "-2.50%",
@@ -721,9 +721,9 @@
     "allowances": 1787,
     "emissions": 1754,
     "msr": null,
-    "cancelled": null,
+    "cancel": null,
     "intake": null,
-    "total_cancelled": null
+    "cancelled": null
   },
   {
     "mitigation": "-2.50%",
@@ -732,9 +732,9 @@
     "allowances": 1756,
     "emissions": 1710,
     "msr": 666,
-    "cancelled": 0,
+    "cancel": 0,
     "intake": 666,
-    "total_cancelled": null
+    "cancelled": null
   },
   {
     "mitigation": "-2.50%",
@@ -743,9 +743,9 @@
     "allowances": 1824,
     "emissions": 1667,
     "msr": 2293,
-    "cancelled": 0,
+    "cancel": 0,
     "intake": 1627,
-    "total_cancelled": null
+    "cancelled": null
   },
   {
     "mitigation": "-2.50%",
@@ -754,9 +754,9 @@
     "allowances": 1739,
     "emissions": 1626,
     "msr": 2579,
-    "cancelled": 0,
+    "cancel": 0,
     "intake": 286,
-    "total_cancelled": null
+    "cancelled": null
   },
   {
     "mitigation": "-2.50%",
@@ -765,9 +765,9 @@
     "allowances": 1933,
     "emissions": 1585,
     "msr": 2824,
-    "cancelled": 0,
+    "cancel": 0,
     "intake": 245,
-    "total_cancelled": null
+    "cancelled": null
   },
   {
     "mitigation": "-2.50%",
@@ -776,9 +776,9 @@
     "allowances": 1695,
     "emissions": 1546,
     "msr": 970,
-    "cancelled": 2123,
+    "cancel": 2123,
     "intake": 269,
-    "total_cancelled": 2123
+    "cancelled": 2123
   },
   {
     "mitigation": "-2.50%",
@@ -787,9 +787,9 @@
     "allowances": 1740,
     "emissions": 1507,
     "msr": 769,
-    "cancelled": 322,
+    "cancel": 322,
     "intake": 120,
-    "total_cancelled": 2445
+    "cancelled": 2445
   },
   {
     "mitigation": "-2.50%",
@@ -798,9 +798,9 @@
     "allowances": 1613,
     "emissions": 1469,
     "msr": 902,
-    "cancelled": 0,
+    "cancel": 0,
     "intake": 134,
-    "total_cancelled": 2445
+    "cancelled": 2445
   },
   {
     "mitigation": "-2.50%",
@@ -809,9 +809,9 @@
     "allowances": 1547,
     "emissions": 1432,
     "msr": 864,
-    "cancelled": 174,
+    "cancel": 174,
     "intake": 135,
-    "total_cancelled": 2619
+    "cancelled": 2619
   },
   {
     "mitigation": "-2.50%",
@@ -820,9 +820,9 @@
     "allowances": 1520,
     "emissions": 1397,
     "msr": 832,
-    "cancelled": 164,
+    "cancel": 164,
     "intake": 133,
-    "total_cancelled": 2783
+    "cancelled": 2783
   },
   {
     "mitigation": "-2.50%",
@@ -831,9 +831,9 @@
     "allowances": 1493,
     "emissions": 1362,
     "msr": 806,
-    "cancelled": 158,
+    "cancel": 158,
     "intake": 131,
-    "total_cancelled": 2940
+    "cancelled": 2940
   },
   {
     "mitigation": "-2.50%",
@@ -842,9 +842,9 @@
     "allowances": 1466,
     "emissions": 1328,
     "msr": 779,
-    "cancelled": 158,
+    "cancel": 158,
     "intake": 131,
-    "total_cancelled": 3098
+    "cancelled": 3098
   },
   {
     "mitigation": "-2.50%",
@@ -853,9 +853,9 @@
     "allowances": 1431,
     "emissions": 1295,
     "msr": 752,
-    "cancelled": 159,
+    "cancel": 159,
     "intake": 132,
-    "total_cancelled": 3258
+    "cancelled": 3258
   },
   {
     "mitigation": "-3%",
@@ -864,9 +864,9 @@
     "allowances": 1787,
     "emissions": 1754,
     "msr": null,
-    "cancelled": null,
+    "cancel": null,
     "intake": null,
-    "total_cancelled": null
+    "cancelled": null
   },
   {
     "mitigation": "-3%",
@@ -875,9 +875,9 @@
     "allowances": 1756,
     "emissions": 1701,
     "msr": 666,
-    "cancelled": 0,
+    "cancel": 0,
     "intake": 666,
-    "total_cancelled": null
+    "cancelled": null
   },
   {
     "mitigation": "-3%",
@@ -886,9 +886,9 @@
     "allowances": 1824,
     "emissions": 1650,
     "msr": 2295,
-    "cancelled": 0,
+    "cancel": 0,
     "intake": 1629,
-    "total_cancelled": null
+    "cancelled": null
   },
   {
     "mitigation": "-3%",
@@ -897,9 +897,9 @@
     "allowances": 1739,
     "emissions": 1601,
     "msr": 2587,
-    "cancelled": 0,
+    "cancel": 0,
     "intake": 292,
-    "total_cancelled": null
+    "cancelled": null
   },
   {
     "mitigation": "-3%",
@@ -908,9 +908,9 @@
     "allowances": 1933,
     "emissions": 1553,
     "msr": 2842,
-    "cancelled": 0,
+    "cancel": 0,
     "intake": 255,
-    "total_cancelled": null
+    "cancelled": null
   },
   {
     "mitigation": "-3%",
@@ -919,9 +919,9 @@
     "allowances": 1695,
     "emissions": 1506,
     "msr": 975,
-    "cancelled": 2151,
+    "cancel": 2151,
     "intake": 285,
-    "total_cancelled": 2151
+    "cancelled": 2151
   },
   {
     "mitigation": "-3%",
@@ -930,9 +930,9 @@
     "allowances": 1740,
     "emissions": 1461,
     "msr": 764,
-    "cancelled": 343,
+    "cancel": 343,
     "intake": 131,
-    "total_cancelled": 2494
+    "cancelled": 2494
   },
   {
     "mitigation": "-3%",
@@ -941,9 +941,9 @@
     "allowances": 1613,
     "emissions": 1417,
     "msr": 908,
-    "cancelled": 5,
+    "cancel": 5,
     "intake": 149,
-    "total_cancelled": 2499
+    "cancelled": 2499
   },
   {
     "mitigation": "-3%",
@@ -952,9 +952,9 @@
     "allowances": 1547,
     "emissions": 1375,
     "msr": 868,
-    "cancelled": 194,
+    "cancel": 194,
     "intake": 154,
-    "total_cancelled": 2693
+    "cancelled": 2693
   },
   {
     "mitigation": "-3%",
@@ -963,9 +963,9 @@
     "allowances": 1520,
     "emissions": 1334,
     "msr": 837,
-    "cancelled": 188,
+    "cancel": 188,
     "intake": 156,
-    "total_cancelled": 2880
+    "cancelled": 2880
   },
   {
     "mitigation": "-3%",
@@ -974,9 +974,9 @@
     "allowances": 1493,
     "emissions": 1294,
     "msr": 811,
-    "cancelled": 186,
+    "cancel": 186,
     "intake": 160,
-    "total_cancelled": 3067
+    "cancelled": 3067
   },
   {
     "mitigation": "-3%",
@@ -985,9 +985,9 @@
     "allowances": 1466,
     "emissions": 1255,
     "msr": 784,
-    "cancelled": 191,
+    "cancel": 191,
     "intake": 165,
-    "total_cancelled": 3258
+    "cancelled": 3258
   },
   {
     "mitigation": "-3%",
@@ -996,9 +996,9 @@
     "allowances": 1431,
     "emissions": 1217,
     "msr": 757,
-    "cancelled": 197,
+    "cancel": 197,
     "intake": 170,
-    "total_cancelled": 3455
+    "cancelled": 3455
   },
   {
     "mitigation": "-3.50%",
@@ -1007,9 +1007,9 @@
     "allowances": 1787,
     "emissions": 1754,
     "msr": null,
-    "cancelled": null,
+    "cancel": null,
     "intake": null,
-    "total_cancelled": null
+    "cancelled": null
   },
   {
     "mitigation": "-3.50%",
@@ -1018,9 +1018,9 @@
     "allowances": 1756,
     "emissions": 1693,
     "msr": 666,
-    "cancelled": 0,
+    "cancel": 0,
     "intake": 666,
-    "total_cancelled": null
+    "cancelled": null
   },
   {
     "mitigation": "-3.50%",
@@ -1029,9 +1029,9 @@
     "allowances": 1824,
     "emissions": 1633,
     "msr": 2297,
-    "cancelled": 0,
+    "cancel": 0,
     "intake": 1631,
-    "total_cancelled": null
+    "cancelled": null
   },
   {
     "mitigation": "-3.50%",
@@ -1040,9 +1040,9 @@
     "allowances": 1739,
     "emissions": 1576,
     "msr": 2595,
-    "cancelled": 0,
+    "cancel": 0,
     "intake": 297,
-    "total_cancelled": null
+    "cancelled": null
   },
   {
     "mitigation": "-3.50%",
@@ -1051,9 +1051,9 @@
     "allowances": 1933,
     "emissions": 1521,
     "msr": 2860,
-    "cancelled": 0,
+    "cancel": 0,
     "intake": 265,
-    "total_cancelled": null
+    "cancelled": null
   },
   {
     "mitigation": "-3.50%",
@@ -1062,9 +1062,9 @@
     "allowances": 1695,
     "emissions": 1468,
     "msr": 981,
-    "cancelled": 2180,
+    "cancel": 2180,
     "intake": 300,
-    "total_cancelled": 2180
+    "cancelled": 2180
   },
   {
     "mitigation": "-3.50%",
@@ -1073,9 +1073,9 @@
     "allowances": 1740,
     "emissions": 1417,
     "msr": 759,
-    "cancelled": 363,
+    "cancel": 363,
     "intake": 141,
-    "total_cancelled": 2543
+    "cancelled": 2543
   },
   {
     "mitigation": "-3.50%",
@@ -1084,9 +1084,9 @@
     "allowances": 1613,
     "emissions": 1367,
     "msr": 912,
-    "cancelled": 10,
+    "cancel": 10,
     "intake": 163,
-    "total_cancelled": 2553
+    "cancelled": 2553
   },
   {
     "mitigation": "-3.50%",
@@ -1095,9 +1095,9 @@
     "allowances": 1547,
     "emissions": 1319,
     "msr": 872,
-    "cancelled": 213,
+    "cancel": 213,
     "intake": 173,
-    "total_cancelled": 2766
+    "cancelled": 2766
   },
   {
     "mitigation": "-3.50%",
@@ -1106,9 +1106,9 @@
     "allowances": 1520,
     "emissions": 1273,
     "msr": 841,
-    "cancelled": 211,
+    "cancel": 211,
     "intake": 180,
-    "total_cancelled": 2977
+    "cancelled": 2977
   },
   {
     "mitigation": "-3.50%",
@@ -1117,9 +1117,9 @@
     "allowances": 1493,
     "emissions": 1228,
     "msr": 815,
-    "cancelled": 214,
+    "cancel": 214,
     "intake": 188,
-    "total_cancelled": 3190
+    "cancelled": 3190
   },
   {
     "mitigation": "-3.50%",
@@ -1128,9 +1128,9 @@
     "allowances": 1466,
     "emissions": 1185,
     "msr": 789,
-    "cancelled": 224,
+    "cancel": 224,
     "intake": 197,
-    "total_cancelled": 3414
+    "cancelled": 3414
   },
   {
     "mitigation": "-3.50%",
@@ -1139,9 +1139,9 @@
     "allowances": 1431,
     "emissions": 1144,
     "msr": 762,
-    "cancelled": 234,
+    "cancel": 234,
     "intake": 207,
-    "total_cancelled": 3648
+    "cancelled": 3648
   },
   {
     "mitigation": "-4%",
@@ -1150,9 +1150,9 @@
     "allowances": 1787,
     "emissions": 1754,
     "msr": null,
-    "cancelled": null,
+    "cancel": null,
     "intake": null,
-    "total_cancelled": null
+    "cancelled": null
   },
   {
     "mitigation": "-4%",
@@ -1161,9 +1161,9 @@
     "allowances": 1756,
     "emissions": 1684,
     "msr": 666,
-    "cancelled": 0,
+    "cancel": 0,
     "intake": 666,
-    "total_cancelled": null
+    "cancelled": null
   },
   {
     "mitigation": "-4%",
@@ -1172,9 +1172,9 @@
     "allowances": 1824,
     "emissions": 1617,
     "msr": 2299,
-    "cancelled": 0,
+    "cancel": 0,
     "intake": 1633,
-    "total_cancelled": null
+    "cancelled": null
   },
   {
     "mitigation": "-4%",
@@ -1183,9 +1183,9 @@
     "allowances": 1739,
     "emissions": 1552,
     "msr": 2602,
-    "cancelled": 0,
+    "cancel": 0,
     "intake": 303,
-    "total_cancelled": null
+    "cancelled": null
   },
   {
     "mitigation": "-4%",
@@ -1194,9 +1194,9 @@
     "allowances": 1933,
     "emissions": 1490,
     "msr": 2878,
-    "cancelled": 0,
+    "cancel": 0,
     "intake": 275,
-    "total_cancelled": null
+    "cancelled": null
   },
   {
     "mitigation": "-4%",
@@ -1205,9 +1205,9 @@
     "allowances": 1695,
     "emissions": 1430,
     "msr": 986,
-    "cancelled": 2208,
+    "cancel": 2208,
     "intake": 316,
-    "total_cancelled": 2208
+    "cancelled": 2208
   },
   {
     "mitigation": "-4%",
@@ -1216,9 +1216,9 @@
     "allowances": 1740,
     "emissions": 1373,
     "msr": 754,
-    "cancelled": 384,
+    "cancel": 384,
     "intake": 152,
-    "total_cancelled": 2591
+    "cancelled": 2591
   },
   {
     "mitigation": "-4%",
@@ -1227,9 +1227,9 @@
     "allowances": 1613,
     "emissions": 1318,
     "msr": 916,
-    "cancelled": 15,
+    "cancel": 15,
     "intake": 178,
-    "total_cancelled": 2607
+    "cancelled": 2607
   },
   {
     "mitigation": "-4%",
@@ -1238,9 +1238,9 @@
     "allowances": 1547,
     "emissions": 1265,
     "msr": 876,
-    "cancelled": 231,
+    "cancel": 231,
     "intake": 192,
-    "total_cancelled": 2838
+    "cancelled": 2838
   },
   {
     "mitigation": "-4%",
@@ -1249,9 +1249,9 @@
     "allowances": 1520,
     "emissions": 1215,
     "msr": 845,
-    "cancelled": 233,
+    "cancel": 233,
     "intake": 202,
-    "total_cancelled": 3071
+    "cancelled": 3071
   },
   {
     "mitigation": "-4%",
@@ -1260,9 +1260,9 @@
     "allowances": 1493,
     "emissions": 1166,
     "msr": 819,
-    "cancelled": 241,
+    "cancel": 241,
     "intake": 215,
-    "total_cancelled": 3312
+    "cancelled": 3312
   },
   {
     "mitigation": "-4%",
@@ -1271,9 +1271,9 @@
     "allowances": 1466,
     "emissions": 1120,
     "msr": 793,
-    "cancelled": 255,
+    "cancel": 255,
     "intake": 228,
-    "total_cancelled": 3567
+    "cancelled": 3567
   },
   {
     "mitigation": "-4%",
@@ -1282,9 +1282,9 @@
     "allowances": 1431,
     "emissions": 1075,
     "msr": 766,
-    "cancelled": 269,
+    "cancel": 269,
     "intake": 242,
-    "total_cancelled": 3836
+    "cancelled": 3836
   },
   {
     "mitigation": "-4.50%",
@@ -1293,9 +1293,9 @@
     "allowances": 1787,
     "emissions": 1754,
     "msr": null,
-    "cancelled": null,
+    "cancel": null,
     "intake": null,
-    "total_cancelled": null
+    "cancelled": null
   },
   {
     "mitigation": "-4.50%",
@@ -1304,9 +1304,9 @@
     "allowances": 1756,
     "emissions": 1675,
     "msr": 666,
-    "cancelled": 0,
+    "cancel": 0,
     "intake": 666,
-    "total_cancelled": null
+    "cancelled": null
   },
   {
     "mitigation": "-4.50%",
@@ -1315,9 +1315,9 @@
     "allowances": 1824,
     "emissions": 1600,
     "msr": 2301,
-    "cancelled": 0,
+    "cancel": 0,
     "intake": 1635,
-    "total_cancelled": null
+    "cancelled": null
   },
   {
     "mitigation": "-4.50%",
@@ -1326,9 +1326,9 @@
     "allowances": 1739,
     "emissions": 1528,
     "msr": 2610,
-    "cancelled": 0,
+    "cancel": 0,
     "intake": 309,
-    "total_cancelled": null
+    "cancelled": null
   },
   {
     "mitigation": "-4.50%",
@@ -1337,9 +1337,9 @@
     "allowances": 1933,
     "emissions": 1459,
     "msr": 2896,
-    "cancelled": 0,
+    "cancel": 0,
     "intake": 285,
-    "total_cancelled": null
+    "cancelled": null
   },
   {
     "mitigation": "-4.50%",
@@ -1348,9 +1348,9 @@
     "allowances": 1695,
     "emissions": 1393,
     "msr": 991,
-    "cancelled": 2236,
+    "cancel": 2236,
     "intake": 331,
-    "total_cancelled": 2236
+    "cancelled": 2236
   },
   {
     "mitigation": "-4.50%",
@@ -1359,9 +1359,9 @@
     "allowances": 1740,
     "emissions": 1331,
     "msr": 749,
-    "cancelled": 404,
+    "cancel": 404,
     "intake": 162,
-    "total_cancelled": 2639
+    "cancelled": 2639
   },
   {
     "mitigation": "-4.50%",
@@ -1370,9 +1370,9 @@
     "allowances": 1613,
     "emissions": 1271,
     "msr": 920,
-    "cancelled": 21,
+    "cancel": 21,
     "intake": 192,
-    "total_cancelled": 2660
+    "cancelled": 2660
   },
   {
     "mitigation": "-4.50%",
@@ -1381,9 +1381,9 @@
     "allowances": 1547,
     "emissions": 1214,
     "msr": 880,
-    "cancelled": 249,
+    "cancel": 249,
     "intake": 210,
-    "total_cancelled": 2909
+    "cancelled": 2909
   },
   {
     "mitigation": "-4.50%",
@@ -1392,9 +1392,9 @@
     "allowances": 1520,
     "emissions": 1159,
     "msr": 850,
-    "cancelled": 255,
+    "cancel": 255,
     "intake": 224,
-    "total_cancelled": 3164
+    "cancelled": 3164
   },
   {
     "mitigation": "-4.50%",
@@ -1403,9 +1403,9 @@
     "allowances": 1493,
     "emissions": 1107,
     "msr": 823,
-    "cancelled": 267,
+    "cancel": 267,
     "intake": 241,
-    "total_cancelled": 3431
+    "cancelled": 3431
   },
   {
     "mitigation": "-4.50%",
@@ -1414,9 +1414,9 @@
     "allowances": 1466,
     "emissions": 1057,
     "msr": 797,
-    "cancelled": 285,
+    "cancel": 285,
     "intake": 258,
-    "total_cancelled": 3716
+    "cancelled": 3716
   },
   {
     "mitigation": "-4.50%",
@@ -1425,9 +1425,9 @@
     "allowances": 1431,
     "emissions": 1009,
     "msr": 770,
-    "cancelled": 303,
+    "cancel": 303,
     "intake": 276,
-    "total_cancelled": 4019
+    "cancelled": 4019
   },
   {
     "mitigation": "-5%",
@@ -1436,9 +1436,9 @@
     "allowances": 1787,
     "emissions": 1754,
     "msr": null,
-    "cancelled": null,
+    "cancel": null,
     "intake": null,
-    "total_cancelled": null
+    "cancelled": null
   },
   {
     "mitigation": "-5%",
@@ -1447,9 +1447,9 @@
     "allowances": 1756,
     "emissions": 1666,
     "msr": 666,
-    "cancelled": 0,
+    "cancel": 0,
     "intake": 666,
-    "total_cancelled": null
+    "cancelled": null
   },
   {
     "mitigation": "-5%",
@@ -1458,9 +1458,9 @@
     "allowances": 1824,
     "emissions": 1583,
     "msr": 2303,
-    "cancelled": 0,
+    "cancel": 0,
     "intake": 1638,
-    "total_cancelled": null
+    "cancelled": null
   },
   {
     "mitigation": "-5%",
@@ -1469,9 +1469,9 @@
     "allowances": 1739,
     "emissions": 1504,
     "msr": 2618,
-    "cancelled": 0,
+    "cancel": 0,
     "intake": 314,
-    "total_cancelled": null
+    "cancelled": null
   },
   {
     "mitigation": "-5%",
@@ -1480,9 +1480,9 @@
     "allowances": 1933,
     "emissions": 1429,
     "msr": 2913,
-    "cancelled": 0,
+    "cancel": 0,
     "intake": 295,
-    "total_cancelled": null
+    "cancelled": null
   },
   {
     "mitigation": "-5%",
@@ -1491,9 +1491,9 @@
     "allowances": 1695,
     "emissions": 1357,
     "msr": 995,
-    "cancelled": 2263,
+    "cancel": 2263,
     "intake": 345,
-    "total_cancelled": 2263
+    "cancelled": 2263
   },
   {
     "mitigation": "-5%",
@@ -1502,9 +1502,9 @@
     "allowances": 1740,
     "emissions": 1289,
     "msr": 744,
-    "cancelled": 423,
+    "cancel": 423,
     "intake": 172,
-    "total_cancelled": 2687
+    "cancelled": 2687
   },
   {
     "mitigation": "-5%",
@@ -1513,9 +1513,9 @@
     "allowances": 1613,
     "emissions": 1225,
     "msr": 923,
-    "cancelled": 26,
+    "cancel": 26,
     "intake": 205,
-    "total_cancelled": 2712
+    "cancelled": 2712
   },
   {
     "mitigation": "-5%",
@@ -1524,9 +1524,9 @@
     "allowances": 1547,
     "emissions": 1164,
     "msr": 884,
-    "cancelled": 266,
+    "cancel": 266,
     "intake": 227,
-    "total_cancelled": 2979
+    "cancelled": 2979
   },
   {
     "mitigation": "-5%",
@@ -1535,9 +1535,9 @@
     "allowances": 1520,
     "emissions": 1106,
     "msr": 853,
-    "cancelled": 277,
+    "cancel": 277,
     "intake": 246,
-    "total_cancelled": 3256
+    "cancelled": 3256
   },
   {
     "mitigation": "-5%",
@@ -1546,9 +1546,9 @@
     "allowances": 1493,
     "emissions": 1050,
     "msr": 827,
-    "cancelled": 292,
+    "cancel": 292,
     "intake": 266,
-    "total_cancelled": 3548
+    "cancelled": 3548
   },
   {
     "mitigation": "-5%",
@@ -1557,9 +1557,9 @@
     "allowances": 1466,
     "emissions": 998,
     "msr": 801,
-    "cancelled": 314,
+    "cancel": 314,
     "intake": 287,
-    "total_cancelled": 3862
+    "cancelled": 3862
   },
   {
     "mitigation": "-5%",
@@ -1568,8 +1568,8 @@
     "allowances": 1431,
     "emissions": 948,
     "msr": 773,
-    "cancelled": 336,
+    "cancel": 336,
     "intake": 309,
-    "total_cancelled": 4198
+    "cancelled": 4198
   }
 ]

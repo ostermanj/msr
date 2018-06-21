@@ -79,13 +79,13 @@ function createChildSeries(d, scenario, isUpdate){
     });
     var calculatedSeries = ( !isUpdate ) ? {
         data: [
-            [this.xAxis.categories.indexOf('emissions'), ( valuesObj.allowances && valuesObj.emissions ) ? valuesObj.allowances - valuesObj.emissions : null],
+            [this.xAxis.categories.indexOf('emissions'), ( valuesObj.allowances && valuesObj.emissions && valuesObj.allowances - valuesObj.emissions > 0 ) ? valuesObj.allowances - valuesObj.emissions : null],
         ],
         name: 'Surplus allowances',
         className: 'surplus-allowances'
     } : {
         data: [
-            [this.xAxis.categories.indexOf('emissions'), ( valuesObj.allowances && valuesObj.emissions ) ? valuesObj.allowances - valuesObj.emissions : null],
+            [this.xAxis.categories.indexOf('emissions'), ( valuesObj.allowances && valuesObj.emissions && valuesObj.allowances - valuesObj.emissions > 0 ) ? valuesObj.allowances - valuesObj.emissions : null],
         ]};
     var extraIntakeSeries = ( !isUpdate ) ? {
         data: [
@@ -181,7 +181,7 @@ function setPositionalOptions(){
 
 var seriesNames = {
  'cancel':      'cancel',
- 'intake':      'intake',
+ 'intake':      'net intake',
  'emissions':   'emissions',   
  'tnac':        'TNAC',
  'msr':         'MSR', 
@@ -302,11 +302,12 @@ export default {
         }]
     },
     yAxis: {
-        max:3720, // TO DO: set programmatically,
-        min: 0,
+        max:4200, // TO DO: set programmatically,
+        min: -200,
         gridZIndex:2,
         reversedStacks: false,
         endOnTick:false,
+        startOnTick: false,
         labels: {
             formatter: function(){
                 return this.axis.defaultLabelFormatter.call(this);
@@ -343,17 +344,17 @@ export default {
         options: [
             {key: 'Normal', value: 'Normal (2.7%)'},
             {key: '-0.50%', value: '0.5%'},
-            {key: '-1%', value: '1%'},
+            {key: '-1%', value: '1.0%'},
             {key: '-1.50%', value: '1.5%'},
-            {key: '-2%', value: '2%'},
+            {key: '-2%', value: '2.0%'},
             {key: '-2.50%', value: '2.5%'},
-            {key: '-3%', value: '3%'},
+            {key: '-3%', value: '3.0%'},
             {key: '-3.50%', value: '3.5%'},
-            {key: '-4%', value: '4%'},
+            {key: '-4%', value: '4.0%'},
             {key: '-4.50%', value: '4.5%'},
-            {key: '-5%', value: '5%'}
+            {key: '-5%', value: '5.0%'}
         ],
-        legend: 'Mitigation'
+        legend: 'Select mitigation (annual decrease in carbon emissions)'
     },
     note: null
 };

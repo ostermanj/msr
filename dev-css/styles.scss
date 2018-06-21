@@ -66,6 +66,7 @@ $color_10: #f15c80;
   .highcharts-data-label-color-10 {
     transform: translate(0);
   }
+
 }
 .highcharts-grid-line {
     fill: none;
@@ -166,6 +167,9 @@ g.highcharts-plot-lines-0 {
 
 #chart-0 {
   margin-bottom: 40px;
+    .highcharts-axis-line {
+    stroke-width:0;
+  }
 }
 
 
