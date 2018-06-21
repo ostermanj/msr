@@ -11,6 +11,32 @@ $color_9: lighten($color_5, 20%);
 
 $color_10: #f15c80;
 
+/* 
+ * OVERRIDES FOR PAGE CONTENT TYPE. DEFAULT IS FOR MAGAZINE
+ */
+.node-type-page {
+  h4 {
+    font-size: 1.5em;
+    color:#222;
+  }
+  .multiple-chart-container .highcharts-yaxis .highcharts-axis-title, .multiple-chart-container .highcharts-plot-line-label {
+    font-size: 0.85em;
+  }
+  .multiple-chart-container .highcharts-yaxis .highcharts-axis-title {
+    transform: translate(0,5px);
+  }
+  .highcharts-note.multiple {
+    font-size: 0.78em;
+  }
+  .multiple-chart-container .highcharts-axis-labels {
+    font-size: 0.9em;
+  }
+  .chart-container .highcharts-title {
+    font-size:1.4em;
+  }
+
+}
+ /* END OVERRIDES */
 
 
 #gradient-0 stop[offset="0"] {
@@ -139,6 +165,9 @@ g.highcharts-plot-lines-0 {
     width: 110px;
     padding-bottom: 0;
     margin-bottom:0;
+    .node-type-page & {
+      width: 108px;
+    }
   }
   .highcharts-container {
     overflow:visible;
