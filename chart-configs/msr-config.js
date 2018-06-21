@@ -334,16 +334,24 @@ export default {
         }
     },
     dataSource: dataController.nestData(dataSource, ['year','mitigation']),
-    initialCategory: 'normal',
+    initialCategory: 'Normal',
     isMultiple: true,
     seriesCreator: createSeries,
     updateFunction: updateCharts,
     userOptions: {
-        type: 'radio',
+        type: 'dropdown',
         options: [
-            {key: 'slow', value: 'Slow'},
-            {key: 'normal', value: 'Normal'},
-            {key: 'fast', value: 'Fast'}
+            {key: 'Normal', value: 'Normal (2.7%)'},
+            {key: '-0.50%', value: '0.5%'},
+            {key: '-1%', value: '1%'},
+            {key: '-1.50%', value: '1.5%'},
+            {key: '-2%', value: '2%'},
+            {key: '-2.50%', value: '2.5%'},
+            {key: '-3%', value: '3%'},
+            {key: '-3.50%', value: '3.5%'},
+            {key: '-4%', value: '4%'},
+            {key: '-4.50%', value: '4.5%'},
+            {key: '-5%', value: '5%'}
         ],
         legend: 'Mitigation'
     },
