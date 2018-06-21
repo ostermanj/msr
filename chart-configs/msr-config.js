@@ -190,7 +190,7 @@ var seriesNames = {
 export default { 
     chart: {  
         
-        height: 120,
+        height: 130,
         type: 'column',
         marginRight: 0,
         /*events: {
