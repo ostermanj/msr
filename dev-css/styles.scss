@@ -110,10 +110,10 @@ g.highcharts-plot-lines-0 {
 .highcharts-plot-line-label {
   display: none;
   transform: translate(-1.2em,0.45em);
-    .last-in-column &.stock-flow {
+    .first-in-column.first-in-row &.stock-flow {
       display: inline;
     }
-    .last-in-row &.cap{
+    .first-in-column.first-in-row &.cap{
       display: inline;
       fill: #000;
     }

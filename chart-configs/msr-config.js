@@ -29,8 +29,8 @@ function createCharts(data, scenario){
                     className: 'cap',
                     text: 'cap',
                     y:-10,
-                    x:5,
-                    align: 'center'
+                    x:16,
+                    align: 'left'
                 }
             }
         ];
@@ -183,8 +183,8 @@ var seriesNames = {
  'cancel':      'cancel',
  'intake':      'intake',
  'emissions':   'emissions',   
- 'tnac':        'tnac',
- 'msr':         'msr', 
+ 'tnac':        'TNAC',
+ 'msr':         'MSR', 
  'cancelled':   'cancelled'
 };
 export default { 
@@ -242,7 +242,7 @@ export default {
                     <span style="display: flex; justify-content: space-between; align-items: flex-end;"><span style="${this.x === 'intake' ? 'font-weight:bold' : ''}">Intake: </span><span>${ year > 2018 ? Highcharts.numberFormat(values.intake, 0, '.',',') : 'n.a.'}</span></span>
                     ${ ( values.extra_intake && this.x !== 'intake' ) ? '<span style="display: flex; justify-content: space-between; align-items: flex-end;"><span>Extra intake: </span><span>' + Highcharts.numberFormat(values.extra_intake, 0, '.',',') + '</span></span>' : ''}
                     ${ ( values.extra_intake && this.x === 'intake' ) ? '<span style="display: flex; justify-content: space-between; align-items: flex-end;"><span style="font-weight:bold;">Extra intake: </span><span>' + Highcharts.numberFormat(values.extra_intake, 0, '.',',') + '</span></span>' : ''}
-                    <span style="display: flex; justify-content: space-between; align-items: flex-end;"><span style="${this.x === 'emissions' ? 'font-weight:bold;' : ''}">Allowances: </span><span>${ values.allowances !== null ? Highcharts.numberFormat(values.allowances, 0, '.',',') : 'n.a.'}</span></span>
+                    <span style="display: flex; justify-content: space-between; align-items: flex-end;"><span style="${this.x === 'emissions' ? 'font-weight:bold;' : ''}">Cap: </span><span>${ values.allowances !== null ? Highcharts.numberFormat(values.allowances, 0, '.',',') : 'n.a.'}</span></span>
                     <span style="display: flex; justify-content: space-between; align-items: flex-end;"><span style="${this.x === 'emissions' ? 'font-weight:bold' : ''}">Emissions: </span><span>${Highcharts.numberFormat(values.emissions, 0, '.',',')}</span></span>
                     <span style="display: flex; justify-content: space-between; align-items: flex-end; border-bottom: 1px dashed #aaa"><span style="${this.x === 'emissions' ? 'font-weight:bold' : ''}">Surplus: </span><span>${ values.allowances !== null ? Highcharts.numberFormat(values.allowances - values.emissions, 0, '.',',') : 'n.a.'}</span></span>
                     <span style="display: flex; justify-content: space-between; align-items: flex-end;"><span style="${this.x === 'tnac' ? 'font-weight:bold' : ''}">TNAC: </span><span>${Highcharts.numberFormat(values.tnac, 0, '.',',')}</span></span>
@@ -256,7 +256,7 @@ export default {
         }
     },
     xAxis: {
-        categories: [ 'cancel', 'intake', 'emissions','tnac','msr','cancelled'], 
+        categories: [ 'emissions', 'intake', 'cancel', 'tnac','msr','cancelled'], 
 
         labels: {
             y: 7,
@@ -270,12 +270,8 @@ export default {
         tickPositions: [0,1,2,3,4,5],
         tickLength: 0,
         plotBands: [
-            {
-                from: -1.5,
-                to: 1,
-                zIndex:1
-            },{
-                from: 3,
+           {
+                from: 1,
                 to: 5.5,
                 zIndex:1
             }
