@@ -342,7 +342,7 @@ export default {
     userOptions: {
         type: 'dropdown',
         options: [
-            {key: 'Normal', value: 'Normal (2.7%)'},
+            {key: 'Normal', value: 'Normal (about 2.7%)'},
             {key: '-0.50%', value: '0.5%'},
             {key: '-1%', value: '1.0%'},
             {key: '-1.50%', value: '1.5%'},

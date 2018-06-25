@@ -200,7 +200,7 @@ export default {
             {key: '2026', value: 2026},
             {key: '2028', value: 2028}
         ],
-        legend: 'Select year reduction is made (normal mitigation of 2.7%)'
+        legend: 'Select year reduction is made (normal mitigation of about 2.7%)'
     },
     note: null
     
