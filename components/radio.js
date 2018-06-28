@@ -1,3 +1,4 @@
+import GAEventHandler from '../dev-js/ga-event-handler.js';
 export default function(options, j){
     //var container = document.createElement('div');
     //container.className = ' form-container flex space-between';
@@ -32,6 +33,7 @@ export default function(options, j){
     var rendered = document.getElementById('chart-' + j + '-radio');
     rendered.querySelectorAll('input').forEach(input => {
         input.onchange = function(){
+            GAEventHandler('selectUserOption', this.value + '-' + options.title.text);
             options.updateFunction.call(options,this.value);
         };
     }); 

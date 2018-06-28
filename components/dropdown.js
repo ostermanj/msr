@@ -1,3 +1,4 @@
+import GAEventHandler from '../dev-js/ga-event-handler.js';
 export default function(options, j){
     var container = document.getElementById('chart-' + j);
     if ( options.userOptions.legend ){
@@ -19,6 +20,7 @@ export default function(options, j){
     
     rendered.onchange = function(){
         console.log(rendered.value);
+        GAEventHandler('selectUserOption', this.value + '-' + options.title.text);
         options.updateFunction.call(options,rendered.value);
     };
 };
