@@ -417,7 +417,7 @@ g.highcharts-annotation[visibility="hidden"]{
 
 }
 
-.highcharts-stack-labels, .highcharts-axis-labels, .highcharts-legend-item text, .highcharts-plot-line-label  {
+.highcharts-stack-labels, .highcharts-axis-labels, .highcharts-legend-item text, .highcharts-plot-line-label, .highcharts-legend-item  {
     font-size: 0.85em;
     .multiple-chart-container & {
       font-size: 0.75em;
@@ -426,7 +426,7 @@ g.highcharts-annotation[visibility="hidden"]{
   
 }
 
-.highcharts-axis-title, .highcharts-axis-labels, .highcharts-subtitle, .highcharts-legend-item text, .highcharts-plot-line-label {
+.highcharts-axis-title, .highcharts-axis-labels, .highcharts-subtitle, .highcharts-legend-item, .highcharts-plot-line-label {
       fill: #58585b;
       font-weight: normal;
 }

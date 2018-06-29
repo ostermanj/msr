@@ -206,7 +206,8 @@ export default {
         enabled: false
     },
     legend: {
-        enabled: false
+        enabled: false,
+       
     },
     plotOptions: {
         
@@ -259,6 +260,7 @@ export default {
         categories: [ 'emissions', 'intake', 'cancel', 'tnac','msr','cancelled'], 
 
         labels: {
+            align: 'right', // need to specify for FF and perhaps other browsers
             y: 7,
             padding: -10,
             reserveSpace: false ,
@@ -266,6 +268,8 @@ export default {
             formatter: function(){
                 return seriesNames[this.value];
             }
+
+
         },
         tickPositions: [0,1,2,3,4,5],
         tickLength: 0,
