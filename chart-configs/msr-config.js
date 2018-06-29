@@ -1,5 +1,6 @@
 const dataSource = require('../data/msr-data.json');
 import { dataController } from '../dev-js/highchart-app.js';
+import checkXAxisLabels from '../dev-js/checkXAxisLabels.js';
 //import { sharedMethods } from '../dev-js/shared-methods.js';
 function createSeries(data){
     console.log(this, data);
@@ -111,11 +112,19 @@ function createChildSeries(d, scenario, isUpdate){
 
 
 function updateCharts(scenario){
-    this.children.forEach(chart => {
+    this.children.forEach((chart, i, charts) => {
         chart.userOptions.currentCategory = scenario;
         console.log(chart, scenario);
         var series = createChildSeries.call(this, chart.userOptions.childData, scenario, true);
         chart.update({series});
+        if ( chart.misplacedLabels ) {
+            chart.renderTo.classList.add('in-transition');
+            if ( i === charts.length - 1) {
+                setTimeout(() => {
+                    checkXAxisLabels.call(chart);
+                }, 500); // need to recheck labels after update
+            }
+        }
     });
 }
 
@@ -161,11 +170,15 @@ function setPositionalOptions(){
                 if ( indexInCol === 0 ){
                     chart.container.classList.add('first-in-column');
                 }
-            }); 
+            });
+                checkXAxisLabels.call(this); // IE and MSEdge do not properly place the labels
+                                             // ignores x and y attribute on the SVG text nodes
+                                             // this function checks bounding box of labels and 
+                                             // corrects if the bbox indicates they are misplaced
         } else {
             setTimeout(() => {
                 setRowColumnClasses.call(this); 
-            }, 100);
+            }, 500);
         }
         
     }
@@ -174,7 +187,7 @@ function setPositionalOptions(){
         clearTimeout(timer);
         timer = setTimeout(() => {
             setRowColumnClasses.call(this);    
-        },100);
+        },500);
     });
     setRowColumnClasses.call(this);
 }
@@ -337,6 +350,7 @@ export default {
         if ( this.userOptions.indexInSet === this.userOptions.setLength - 1 ){ // ie is the last chart in the multiple set
             setPositionalOptions.call(this);
         }
+        
     },
     dataSource: dataController.nestData(dataSource, ['year','mitigation']),
     initialCategory: 'Normal',

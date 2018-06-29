@@ -8,8 +8,33 @@ $color_6: lighten($color_3, 20%);
 $color_7: lighten($color_1, 20%);
 $color_8: lighten($color_2, 20%);
 $color_9: lighten($color_5, 20%);
-
 $color_10: #f15c80;
+
+$red:   #572600;
+/* IE 10 and 11 */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .chart-container:not(.chart-container--small)::before {
+    content: 'This feature works better in browsers other than Internet Explorer and MS Edge';
+    display: block;
+    position: absolute;
+    color: #fff;
+    background-color: $red;
+    padding: 0 5px;
+  }
+}
+
+/*----MS Edge Browser CSS Start----*/
+@supports (-ms-ime-align:auto) {
+  .chart-container:not(.chart-container--small)::before {
+    content: 'This feature works better in browsers other than Internet Explorer and MS Edge';
+    display: block;
+    position: absolute;
+    color: #fff;
+    background-color: $red;
+    padding: 0 5px;
+  }
+}
+/*----MS Edge Browser CSS End----*/
 
 /* 
  * OVERRIDES FOR PAGE CONTENT TYPE. DEFAULT IS FOR MAGAZINE
@@ -191,7 +216,11 @@ g.highcharts-plot-lines-0 {
         display:inline;
       }
     }
+    
   }
+}
+.in-transition .highcharts-xaxis-labels {
+  opacity: 0;
 }
 #chart-1.multiple-chart-container .chart-container {
   width:100%;
