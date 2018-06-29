@@ -18,7 +18,7 @@ export default function(){   // IE and MSEdge do not properly place the labels
                                                      // instruction and add to it
                 node.removeAttribute('x');
                 node.removeAttribute('y');
-                node.setAttribute('transform', `${rotate} translate(${x - 37}, ${y})`);
+                node.setAttribute('transform', `${rotate} translate(${x - 52}, ${y})`);
             });
             chart.renderTo.classList.remove('in-transition'); // labels are re-placed on chart update and they have
                                                               // to be corrected again. in-transition class hides them

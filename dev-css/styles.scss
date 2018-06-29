@@ -13,25 +13,27 @@ $color_10: #f15c80;
 $red:   #572600;
 /* IE 10 and 11 */
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  .chart-container:not(.chart-container--small)::before {
+  #ms-message::before {
     content: 'This feature works better in browsers other than Internet Explorer and MS Edge';
     display: block;
-    position: absolute;
+    //position: absolute;
     color: #fff;
-    background-color: $red;
+    background-color: #767676;
     padding: 0 5px;
+    font-size:0.85em;
   }
 }
 
 /*----MS Edge Browser CSS Start----*/
 @supports (-ms-ime-align:auto) {
-  .chart-container:not(.chart-container--small)::before {
+  #ms-message::before {
     content: 'This feature works better in browsers other than Internet Explorer and MS Edge';
     display: block;
-    position: absolute;
+    //position: absolute;
     color: #fff;
-    background-color: $red;
+    background-color: #767676;
     padding: 0 5px;
+    font-size:0.85em;
   }
 }
 /*----MS Edge Browser CSS End----*/
