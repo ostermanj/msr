@@ -20,7 +20,7 @@ export default function(options, j){
     
     rendered.onchange = function(){
         console.log(rendered.value);
-        GAEventHandler('selectUserOption', this.value + '-' + options.title.text);
+        GAEventHandler('selectUserOption', this.value + '--' + options.chart.className);
         options.updateFunction.call(options,rendered.value);
     };
 };

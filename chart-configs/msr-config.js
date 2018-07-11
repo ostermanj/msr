@@ -202,7 +202,7 @@ var seriesNames = {
 };
 export default { 
     chart: {  
-        
+        className: 'msr',
         height: 130,
         type: 'column',
         marginRight: 0,

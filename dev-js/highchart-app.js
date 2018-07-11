@@ -84,6 +84,9 @@ var fullAPI = (function(){
             Highcharts.setOptions(HighchartsDefaults);
             this.charts = []; 
             chartConfigs.forEach((options,i) => {
+                if (options.chart.className === undefined){
+                    throw 'Charts need to have a className. chartConfig index: ' + i;
+                }
                 options.index = i;
                 createUserOptions(options, i);
                 options.series = options.series || options.seriesCreator(options.dataSource);

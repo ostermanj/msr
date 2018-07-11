@@ -33,7 +33,7 @@ export default function(options, j){
     var rendered = document.getElementById('chart-' + j + '-radio');
     rendered.querySelectorAll('input').forEach(input => {
         input.onchange = function(){
-            GAEventHandler('selectUserOption', this.value + '-' + options.title.text);
+            GAEventHandler('selectUserOption', this.value + '--' + options.chart.className);
             options.updateFunction.call(options,this.value);
         };
     }); 

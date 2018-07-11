@@ -147,7 +147,7 @@ export default {
         }
     },
     chart: {
-        //inverted: true,
+        className: 'sankey',
         height: 225
         
        
